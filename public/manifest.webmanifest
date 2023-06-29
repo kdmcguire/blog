@@ -1,7 +1,7 @@
 {
-	"name": "Astro Theme Cactus Demo",
-	"short_name": "Astro_Cactus",
-	"description": "Starter blog site for Astro",
+	"name": "Kieran's blog",
+	"short_name": "Kierans_Blog",
+	"description": "A few thoughts, one at a time.",
 	"icons": [
 		{
 			"src": "/192x192.png",
