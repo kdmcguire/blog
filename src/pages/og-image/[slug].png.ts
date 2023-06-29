@@ -2,7 +2,7 @@ import type { APIContext, GetStaticPaths } from "astro";
 import { getCollection, getEntryBySlug } from "astro:content";
 import { readFileSync } from "node:fs";
 import { join, resolve } from "node:path";
-import satori, { SatoriOptions } from "satori";
+import satori, { type SatoriOptions } from "satori";
 import { html } from "satori-html";
 import { Resvg } from "@resvg/resvg-js";
 import { siteConfig } from "@/site-config";
