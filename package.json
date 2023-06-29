@@ -41,9 +41,10 @@
 		"typescript": "^5.1.5"
 	},
 	"dependencies": {
+		"@astrojs/netlify": "2.3.0",
 		"@astrojs/prefetch": "^0.2.3",
 		"@astrojs/rss": "^2.4.3",
-		"astro": "2.7.1",
+		"astro": "2.7.2",
 		"satori": "0.10.1",
 		"satori-html": "^0.3.2",
 		"sharp": "^0.32.0"
