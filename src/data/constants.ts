@@ -15,7 +15,7 @@ export const MENU_LINKS = [
 
 // ! Remember to add your own socials
 export const SOCIAL_LINKS = {
-	mastodon: "https://mastodon.online/@kieranmcguire",
+	mastodon: "https://hachyderm.io/@kieranmcguire",
 	letterboxd: "https://letterboxd.com/kieranimo/",
 	github: "https://github.com/kdmcguire",
 };
