@@ -42,7 +42,7 @@
 	},
 	"dependencies": {
 		"@astrojs/netlify": "2.3.0",
-		"@astrojs/prefetch": "0.2.3",
+		"@astrojs/prefetch": "0.3.0",
 		"@astrojs/rss": "2.4.3",
 		"astro": "2.9.0",
 		"satori": "0.10.1",
