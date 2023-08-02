@@ -44,7 +44,7 @@
 		"@astrojs/netlify": "2.5.0",
 		"@astrojs/prefetch": "0.3.0",
 		"@astrojs/rss": "2.4.3",
-		"astro": "2.9.4",
+		"astro": "2.9.7",
 		"satori": "0.10.1",
 		"satori-html": "0.3.2",
 		"sharp": "0.32.4"
