@@ -7,7 +7,6 @@ import prefetch from "@astrojs/prefetch";
 
 // https://astro.build/config
 export default defineConfig({
-	// ! Please remember to replace the following site property with your own domain
 	site: "https://kieran-mcguire.uk/",
 	markdown: {
 		shikiConfig: {
@@ -31,5 +30,11 @@ export default defineConfig({
 		optimizeDeps: {
 			exclude: ["@resvg/resvg-js"],
 		},
+	},
+	redirects: {
+		"/adding-security-headers-through-netlify": "/posts/adding-security-headers-through-netlify",
+		"battlefield-2042-review": "/posts/battlefield-2042-review",
+		"cookies-browsers-and-misplaced-efforts": "/posts/cookies-browsers-and-misplaced-efforts",
+		"/cyberpunk-2077-review/": "/posts/cyberpunk-2077-review/"
 	},
 });
