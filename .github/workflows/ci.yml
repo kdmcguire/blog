@@ -69,3 +69,27 @@ jobs:
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  assign-reviewer:
+    runs-on: ubuntu-latest
+    needs: [checks]
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    steps:
+      - name: Get Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@v1.6.0
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+      - name: Assign for production updates
+        id: assign-prod  
+        if: ${{ (steps.metadata.outputs.dependency-type == 'direct:production') }}
+        run: gh pr edit --add-reviewer @kdmcguire "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Assign for major updates
+        id: assign-major  
+        if: ${{ (steps.metadata.outputs.update-type == 'version-update:semver-major') }}
+        run: gh pr edit --add-reviewer @kdmcguire "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
