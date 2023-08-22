@@ -38,7 +38,7 @@
 		"typescript": "5.1.6"
 	},
 	"dependencies": {
-		"@astrojs/image": "0.17.2",
+		"@astrojs/image": "0.17.3",
 		"@astrojs/mdx": "0.19.7",
 		"@astrojs/netlify": "2.5.0",
 		"@astrojs/prefetch": "0.3.0",
