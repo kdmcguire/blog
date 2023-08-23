@@ -60,10 +60,10 @@ const { headings } = await post.render();
 				</aside>
 			)
 		}
-		<article class="flex-grow break-words">
+		<article class="flex-grow break-words e-content">
 			<div id="blog-hero"><BlogHero content={post} /></div>
 			<div
-				class="prose prose-sm prose-cactus mt-12 prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none"
+				class="prose prose-sm prose-cactus mt-12 prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none e-content"
 			>
 				<slot />
 			</div>
@@ -87,4 +87,5 @@ const { headings } = await post.render();
 			<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"></path>
 		</svg>
 	</button>
+	<a href="https://brid.gy/publish/mastodon">
 </BaseLayout>
