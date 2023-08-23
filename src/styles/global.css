@@ -23,10 +23,6 @@
 		--theme-menu-bg: rgb(29 31 33 / 0.85);
 	}
 
-	html {
-		@apply h-full scroll-smooth border-t-2 border-textColor;
-	}
-
 	html body {
 		@apply mx-auto flex h-full max-w-3xl flex-col bg-bgColor px-8 pt-16 font-mono text-sm font-normal text-textColor antialiased;
 	}
