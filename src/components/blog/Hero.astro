@@ -12,8 +12,8 @@ const datetime = content.data.publishDate.toISOString();
 const postDate = getFormattedDate(content.data.publishDate, { month: "long" });
 ---
 
-<h1 class="title mb-3 sm:mb-1">{content.data.title}</h1>
-<time datetime={datetime}>{postDate}</time>
+<h1 class="title mb-3 sm:mb-1 p-name">{content.data.title}</h1>
+<time datetime={datetime} class="dt-published">{postDate}</time>
 {
 	!!content.data.tags?.length && (
 		<div class="mt-1 sm:mt-0 sm:inline sm:before:mx-2 sm:before:content-['|']">
@@ -49,4 +49,4 @@ const postDate = getFormattedDate(content.data.publishDate, { month: "long" });
 		</div>
 	)
 }
-<p class="mt-8">{content.data.description}</p>
+<p class="mt-8 p-summary">{content.data.description}</p>
