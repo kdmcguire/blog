@@ -4,12 +4,16 @@ import { SOCIAL_LINKS } from "@/data/constants";
 // *** SVG icons from https://tablericons.com/ ***
 ---
 
-<div class="flex flex-wrap items-center gap-x-4 sm:items-center">
+<span class="h-card">
+	<h2 class="title mb-4 text-xl">I'm Kieran.</h2>
+	<img class="u-photo" style="display:none" src="/kieran-mcguire.jpg" alt="Kieran McGuire">
+	<div class="flex flex-wrap items-center gap-x-4 sm:items-center">
+
 	<p>Find me on</p>
 	<ul class="flex flex-1 items-center gap-x-4 sm:flex-initial">
 		<li>
 			<a
-				class="inline-block p-2 sm:hover:text-link"
+				class="inline-block p-2 sm:hover:text-link u-url"
 				href={SOCIAL_LINKS.mastodon}
 				target="_blank"
 				rel="me"
@@ -39,7 +43,7 @@ import { SOCIAL_LINKS } from "@/data/constants";
 		</li>
 		<li>
 			<a
-				class="inline-block p-2 sm:hover:text-link"
+				class="inline-block p-2 sm:hover:text-link u-url"
 				href={SOCIAL_LINKS.github}
 				target="_blank"
 				rel="me"
@@ -67,7 +71,7 @@ import { SOCIAL_LINKS } from "@/data/constants";
 		</li>
 		<li>
 			<a
-				class="inline-block p-2 sm:hover:text-link"
+				class="inline-block p-2 sm:hover:text-link u-url"
 				href={SOCIAL_LINKS.bookwyrm}
 				target="_blank"
 				rel="me"
@@ -94,7 +98,7 @@ import { SOCIAL_LINKS } from "@/data/constants";
 		</li>
 		<li>
 			<a
-				class="inline-block p-2 sm:hover:text-link"
+				class="inline-block p-2 sm:hover:text-link u-url"
 				href={SOCIAL_LINKS.letterboxd}
 				target="_blank"
 				rel="noopener noreferrer"
@@ -122,3 +126,4 @@ import { SOCIAL_LINKS } from "@/data/constants";
 		</li>
 	</ul>
 </div>
+</span>
