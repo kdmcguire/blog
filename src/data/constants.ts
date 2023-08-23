@@ -18,4 +18,5 @@ export const SOCIAL_LINKS = {
 	mastodon: "https://hachyderm.io/@kieranmcguire",
 	letterboxd: "https://letterboxd.com/kieranimo/",
 	github: "https://github.com/kdmcguire",
+	bookwyrm: "https://bookwyrm.social/user/kieranimo",
 };
