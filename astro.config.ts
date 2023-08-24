@@ -32,6 +32,7 @@ export default defineConfig({
 		},
 	},
 	redirects: {
+		"/about": "/",
 		"/adding-security-headers-through-netlify": "/posts/adding-security-headers-through-netlify",
 		"battlefield-2042-review": "/posts/battlefield-2042-review",
 		"cookies-browsers-and-misplaced-efforts": "/posts/cookies-browsers-and-misplaced-efforts",
