@@ -53,7 +53,7 @@ const postDate = getFormattedDate(content.data.publishDate, { month: "long" });
 			{content.data.tags.map((tag, i) => (
 				<>
 					<a
-						class="cactus-link inline-block before:content-['#']"
+						class="p-category cactus-link inline-block before:content-['#']"
 						aria-label={`View more blogs with the tag ${tag}`}
 						href={`/tags/${tag}/`}
 					>
