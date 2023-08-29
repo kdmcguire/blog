@@ -4,10 +4,7 @@ import { siteConfig } from "@/site-config";
 import sanitizeHtml from 'sanitize-html';
 import MarkdownIt from 'markdown-it';
 
-const parser = new MarkdownIt({
-	html: true,
-	linkify: true,
-});
+const parser = new MarkdownIt();
 
 export const get = async () => {
 	const posts = await getCollection("post");
@@ -23,14 +20,14 @@ export const get = async () => {
 			pubDate: post.data.publishDate,
 			categories: post.data.tags,
 			description: post.data.description,
-			content: `<![CDATA[ ${sanitizeHtml(
+			content: sanitizeHtml(
 				parser.render(post.body),
 				{
 					exclusiveFilter: function (frame) {
 						return (frame.tag === 'p' && frame.text === 'import { Image } from "@astrojs/image/components";') || (frame.tag === 'p' && !frame.text.trim())
 					},
 				}
-			)} ]]>`,
+			),
 			link: `posts/${post.slug}`,
 			author: `kieran-mcguire@outlook.com (${siteConfig.author})`,
 		})),
