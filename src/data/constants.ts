@@ -7,4 +7,8 @@ export const MENU_LINKS = [
 		title: "Blog",
 		path: "/posts/",
 	},
+	{
+		title: "Blogroll",
+		path: "/blogroll/",
+	},
 ];
