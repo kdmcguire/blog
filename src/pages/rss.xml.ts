@@ -6,7 +6,7 @@ import MarkdownIt from 'markdown-it';
 
 const parser = new MarkdownIt({
 	html: true,
-	xhtmlOut: true
+	linkify: true,
 });
 
 export const get = async () => {
@@ -16,7 +16,7 @@ export const get = async () => {
 		title: siteConfig.title,
 		description: siteConfig.description,
 		site: import.meta.env.SITE,
-		customData: '<language>en-uk</language>',
+		customData: `<language> ${siteConfig.lang}</language>`,
 		items: posts.map((post) => ({
 			title: post.data.title,
 			pubDate: post.data.publishDate,
@@ -31,7 +31,7 @@ export const get = async () => {
 				}
 			)} ]]>`,
 			link: `posts/${post.slug}`,
-			author: siteConfig.author,
+			author: 'kieran-mcguire@outlook.com',
 		})),
 	});
 };
