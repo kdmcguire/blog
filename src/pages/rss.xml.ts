@@ -31,7 +31,7 @@ export const get = async () => {
 				}
 			)} ]]>`,
 			link: `posts/${post.slug}`,
-			author: 'kieran-mcguire@outlook.com',
+			author: `kieran-mcguire@outlook.com (${siteConfig.author})`,
 		})),
 	});
 };
