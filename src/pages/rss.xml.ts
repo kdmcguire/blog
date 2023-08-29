@@ -13,7 +13,7 @@ export const get = async () => {
 	const posts = await getCollection("post");
 
 	return rss({
-		xmlns: { atom: 'https://www.w3.org/2005/Atom' },
+		xmlns: { atom: 'http://www.w3.org/2005/Atom' },
 		title: siteConfig.title,
 		description: siteConfig.description,
 		site: import.meta.env.SITE,
