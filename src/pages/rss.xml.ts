@@ -17,7 +17,7 @@ export const get = async () => {
 		title: siteConfig.title,
 		description: siteConfig.description,
 		site: import.meta.env.SITE,
-		customData: `<language>${siteConfig.lang}</language><atom:link href="https://kieran-mcguire.uk/rss.xml" rel="self" type="application/rss+xml" />`,
+		customData: '<language>en-UK</language><atom:link href="https://kieran-mcguire.uk/rss.xml" rel="self" type="application/rss+xml" />',
 		items: posts.map((post) => ({
 			title: post.data.title,
 			pubDate: post.data.publishDate,
