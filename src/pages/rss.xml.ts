@@ -13,10 +13,11 @@ export const get = async () => {
 	const posts = await getCollection("post");
 
 	return rss({
+		xmlns: { h: 'http://www.w3.org/TR/html4/', atom: 'https://www.w3.org/2005/Atom' },
 		title: siteConfig.title,
 		description: siteConfig.description,
 		site: import.meta.env.SITE,
-		customData: `<language> ${siteConfig.lang}</language>`,
+		customData: `<language>${siteConfig.lang}</language><atom:link href="https://kieran-mcguire.uk/rss.xml" rel="self" type="application/rss+xml" />`,
 		items: posts.map((post) => ({
 			title: post.data.title,
 			pubDate: post.data.publishDate,
