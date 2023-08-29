@@ -1,35 +1,46 @@
 ---
-import { MENU_LINKS } from "@/data/constants";
-
 const year = new Date().getFullYear();
 ---
 
 <footer
-	class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pb-4 pt-20 text-center align-top text-gray-500 sm:flex-row sm:justify-between sm:text-xs"
+	class="gap-y-2 pb-4 pt-20 align-top text-gray-500 sm:text-xs"
 >
-	<div class="me-0 sm:me-4">
+	<div class="mt-0">
 		Copyright &copy; {year}
 		<span class="mx-2" aria-label="rocket emoji">🚀</span>
 		Kieran McGuire
 	</div>
 	<nav
 		aria-label="More on this site"
-		class="flex gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-gray-500"
+		class="mt-2 gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-gray-500"
 	>
-		{
-			MENU_LINKS.map((link) => (
-				<a
-					href={link.path}
-					class="px-4 py-2 sm:px-2 sm:py-0 sm:hover:text-textColor sm:hover:underline"
-				>
-					{link.title}
-				</a>
-			))
-		}
-		<a href="/rss.xml" class="px-4 py-2 sm:px-2 sm:py-0 sm:hover:text-textColor sm:hover:underline"
+		<a href="https://kieran-mcguire.uk/" class="pr-2 py-2 sm:pr-1 sm:py-0 sm:hover:text-textColor sm:hover:underline"
+		>Home</a>
+		<a href="https://kieran-mcguire.uk/posts/" class="px-4 py-2 sm:px-2 sm:py-0 sm:hover:text-textColor sm:hover:underline"
+		>Blog</a>
+		<a href="https://kieran-mcguire.uk/rss.xml" class="px-4 py-2 sm:px-2 sm:py-0 sm:hover:text-textColor sm:hover:underline"
 		>RSS</a>
+		<a href="https://kieran-mcguire.uk/blogroll" class="pl-2 py-2 sm:pl-1 sm:py-0 sm:hover:text-textColor sm:hover:underline"
+		>Blogroll</a>
 	</nav>
-	<p><a href="https://xn--sr8hvo.ws/previous">←</a>
+	<div class="mt-2 max-h-4">
+		<a href="http://validator.w3.org/check.cgi?url=https%3A//kieran-mcguire.uk/rss.xml">
+			<svg version="1.1" id="RSS icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 455.731 455.731" xml:space="preserve" width="14px" height="14px" fill="#000000" class="inline">
+				<g stroke-width="0"></g>
+				<g stroke-linecap="round" stroke-linejoin="round"></g>
+				<g>
+					<g>
+						<rect x="0" y="0" style="fill:#F78422;" width="455.731" height="455.731"></rect>
+						<g>
+							<path style="fill:#FFFFFF;" d="M296.208,159.16C234.445,97.397,152.266,63.382,64.81,63.382v64.348 c70.268,0,136.288,27.321,185.898,76.931c49.609,49.61,76.931,115.63,76.931,185.898h64.348 C391.986,303.103,357.971,220.923,296.208,159.16z"></path>
+							<path style="fill:#FFFFFF;" d="M64.143,172.273v64.348c84.881,0,153.938,69.056,153.938,153.939h64.348 C282.429,270.196,184.507,172.273,64.143,172.273z"></path>
+							<circle style="fill:#FFFFFF;" cx="109.833" cy="346.26" r="46.088"></circle>
+						</g>
+					</g>
+				</g>
+			</svg>
+			Valid RSS ✔️</a></div>
+	<div class="mt-2"><a href="https://xn--sr8hvo.ws/previous">←</a>
 		An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
-		<a href="https://xn--sr8hvo.ws/next">→</a></p>
+		<a href="https://xn--sr8hvo.ws/next">→</a></div>
 </footer>
