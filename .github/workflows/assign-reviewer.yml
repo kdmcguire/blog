@@ -1,4 +1,4 @@
-name: Assign author
+name: Assign reviewer
 
 on: pull_request
 
@@ -8,9 +8,8 @@ permissions:
   repository-projects: read
 
 jobs:
-  assign-author:
-    name: Assign PR to author
-    if: ${{ github.actor != 'dependabot[bot]' }}
+  assign-reviewer:
+    name: Assign PR for review
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ github.token }}
