@@ -39,7 +39,7 @@
 		"typescript": "5.2.2"
 	},
 	"dependencies": {
-		"@astrojs/image": "0.17.3",
+		"@astrojs/image": "0.18.0",
 		"@astrojs/mdx": "0.19.7",
 		"@astrojs/netlify": "2.6.0",
 		"@astrojs/prefetch": "0.3.0",
