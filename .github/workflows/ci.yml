@@ -17,21 +17,15 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
-      - name: Setup Node
+      - name: Setup pnpm
         id: node
-        uses: actions/setup-node@v3
-        with:
-          cache: npm
-          node-version: 18
+        uses: pnpm/action-setup@v2
       - name: Install
         id: install
-        run: npm ci
-      - name: Astro check
-        id: astro
-        run: npm run check
+        run: pnpm install
       - name: Build
         id: build
-        run: npm run build
+        run: pnpm run build
   auto-approve:
     if: ${{ github.actor == 'dependabot[bot]' }}
     needs: [checks]
