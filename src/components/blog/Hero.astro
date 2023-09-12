@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 import FormattedDate from "../FormattedDate.astro";
+import profilePic from "@/assets/kieran-mcguire.jpg";
 
 interface Props {
   content: CollectionEntry<"post">;
@@ -34,7 +35,8 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
 <h1 class="p-name title mb-3 sm:mb-1">{data.title}</h1>
 <div class="flex flex-wrap items-center gap-x-3 gap-y-2">
   <p class="font-semibold">
-    <FormattedDate date={data.publishDate} dateTimeOptions={dateTimeOptions} /> /{" "}
+    <FormattedDate class="dt-published" date={data.publishDate} dateTimeOptions={dateTimeOptions} />
+    /{" "}
     {remarkPluginFrontmatter.minutesRead}
   </p>
   {
@@ -111,5 +113,8 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
   <a class="u-url cactus-link" href={Astro.url}>Permalink</a>
 </div>
 <em><p class="p-summary mt-4">{data.description}</p></em>
-<p class="hidden"><a rel="author" class="p-author h-card" href="/">Kieran McGuire</a></p>
+<div class="hidden">
+  <a rel="author" class="p-author h-card" href="/">Kieran McGuire</a>
+  <Image class="u-photo" src={profilePic} alt="Kieran McGuire" height="200" width="200" />
+</div>
 <hr class="mt-2" />
