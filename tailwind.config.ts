@@ -20,11 +20,12 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				bgColor: "var(--theme-bg)",
-				textColor: "var(--theme-text)",
-				link: "var(--theme-link)",
-				accent: "var(--theme-accent)",
-				"accent-2": "var(--theme-accent-2)",
+				bgColor: "hsl(var(--theme-bg) / <alpha-value>)",
+				textColor: "hsl(var(--theme-text) / <alpha-value>)",
+				link: "hsl(var(--theme-link) / <alpha-value>)",
+				accent: "hsl(var(--theme-accent) / <alpha-value>)",
+				"accent-2": "hsl(var(--theme-accent-2) / <alpha-value>)",
+				quote: "hsl(var(--theme-quote) / <alpha-value>)",
 			},
 			fontFamily: {
 				// Add any custom fonts here
@@ -40,13 +41,13 @@ export default {
 			typography: (theme) => ({
 				cactus: {
 					css: {
-						"--tw-prose-body": "var(--theme-text)",
-						"--tw-prose-headings": "var(--theme-accent-2)",
-						"--tw-prose-links": "var(--theme-text)",
-						"--tw-prose-bold": "var(--theme-text)",
-						"--tw-prose-bullets": "var(--theme-text)",
-						"--tw-prose-quotes": "var(--theme-quote)",
-						"--tw-prose-code": "var(--theme-text)",
+						"--tw-prose-body": theme("colors.textColor / 1"),
+						"--tw-prose-headings": theme("colors.accent-2 / 1"),
+						"--tw-prose-links": theme("colors.textColor / 1"),
+						"--tw-prose-bold": theme("colors.textColor / 1"),
+						"--tw-prose-bullets": theme("colors.textColor / 1"),
+						"--tw-prose-quotes": theme("colors.quote / 1"),
+						"--tw-prose-code": theme("colors.textColor / 1"),
 						"--tw-prose-hr": "0.5px dashed #666",
 						"--tw-prose-th-borders": "#666",
 					},
@@ -64,7 +65,7 @@ export default {
 							borderRadius: "2px",
 						},
 						blockquote: {
-							borderLeftWidth: "none",
+							borderLeftWidth: "0",
 						},
 						hr: {
 							borderTopStyle: "dashed",
@@ -81,6 +82,21 @@ export default {
 						},
 						tfoot: {
 							borderTop: "1px dashed #666",
+						},
+						sup: {
+							"@apply ms-0.5": "",
+							a: {
+								"@apply bg-none": "",
+								"&:hover": {
+									"@apply text-link no-underline bg-none": "",
+								},
+								"&:before": {
+									content: "'['",
+								},
+								"&:after": {
+									content: "']'",
+								},
+							},
 						},
 					},
 				},
@@ -103,10 +119,10 @@ export default {
 				".cactus-link": {
 					"@apply bg-[size:100%_6px] bg-bottom bg-repeat-x": {},
 					backgroundImage:
-						"linear-gradient(transparent,transparent 5px,var(--theme-text) 5px,var(--theme-text))",
+						"linear-gradient(transparent,transparent 5px,hsl(var(--theme-text)) 5px,hsl(var(--theme-text)))",
 					"&:hover": {
 						backgroundImage:
-							"linear-gradient(transparent,transparent 4px,var(--theme-link) 4px,var(--theme-link))",
+							"linear-gradient(transparent,transparent 4px,hsl(var(--theme-link)) 4px,hsl(var(--theme-link)))",
 					},
 				},
 				".title": {
