@@ -4,7 +4,7 @@ publishDate: "23 August 2023"
 description: "Something simple that brings me joy and staves off the Monday blues."
 tags: ["life", "Canterbury"]
 coverImage:
-  src: "@/assets/canterbury-butchery-lane.webp"
+  src: "@/assets/canterbury-butchery-lane.jpg"
   alt: "A view of Canterbury Cathedral from Butchery Lane, lined with historic buildings"
 ---
 

@@ -4,7 +4,7 @@ publishDate: "31 August 2021"
 description: "A flawed but emotional and compelling ride, which I was sad to say goodbye to."
 tags: ["reviews", "games"]
 coverImage:
-  src: "@/assets/cyberpunk-2077.webp"
+  src: "@/assets/cyberpunk-2077.jpg"
   alt: "A view of Night City from the game Cyberpunk 2077"
 ---
 

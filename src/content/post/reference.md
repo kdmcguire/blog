@@ -3,7 +3,7 @@ title: "Reference guide"
 description: "This post is for testing and listing a number of different markdown elements"
 publishDate: "22 Feb 2023"
 coverImage:
-  src: "./cover.png"
+  src: "@/assets/cover.png"
   alt: "Astro build wallpaper"
 tags: ["test", "markdown"]
 draft: true
@@ -103,7 +103,7 @@ Syntax highlighting
 
 ```js
 var foo = function (bar) {
-	return bar++;
+  return bar++;
 };
 
 console.log(foo(5));
@@ -129,7 +129,7 @@ Right aligned columns
 
 Image in the same folder: `src/content/post/markdown-elements/logo.png`
 
-![Astro theme cactus logo](./logo.png)
+![Astro theme cactus logo](@/assets/logo.png)
 
 Image in the aliased assets folder: `src/assets/about-astro.png`
 
