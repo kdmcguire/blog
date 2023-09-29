@@ -53,8 +53,8 @@ devDependencies:
     specifier: 8.44.3
     version: 8.44.3
   '@types/markdown-it':
-    specifier: 13.0.1
-    version: 13.0.1
+    specifier: 13.0.2
+    version: 13.0.2
   '@types/prettier':
     specifier: 3.0.0
     version: 3.0.0
@@ -95,8 +95,8 @@ devDependencies:
     specifier: 5.0.0
     version: 5.0.0(@types/eslint@8.44.3)(eslint-config-prettier@9.0.0)(eslint@8.50.0)(prettier@3.0.3)
   markdown-it:
-    specifier: 13.0.1
-    version: 13.0.1
+    specifier: 13.0.2
+    version: 13.0.2
   mdast-util-to-string:
     specifier: 4.0.0
     version: 4.0.0
@@ -1330,8 +1330,8 @@ packages:
     resolution: {integrity: sha512-pTjcqY9E4nOI55Wgpz7eiI8+LzdYnw3qxXCfHyBDdPbYvbyLgWLJGh8EdPvqawwMK1Uo1794AUkkR38Fr0g+2g==}
     dev: true
 
-  /@types/markdown-it@13.0.1:
-    resolution: {integrity: sha512-SUEb8Frsxs3D5Gg9xek6i6EG6XQ5s+O+ZdQzIPESZVZw3Pv3CPQfjCJBI+RgqZd1IBeu18S0Rn600qpPnEK37w==}
+  /@types/markdown-it@13.0.2:
+    resolution: {integrity: sha512-Tla7hH9oeXHOlJyBFdoqV61xWE9FZf/y2g+gFVwQ2vE1/eBzjUno5JCd3Hdb5oATve5OF6xNjZ/4VIZhVVx+hA==}
     dependencies:
       '@types/linkify-it': 3.0.3
       '@types/mdurl': 1.0.2
@@ -3955,8 +3955,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /markdown-it@13.0.1:
-    resolution: {integrity: sha512-lTlxriVoy2criHP0JKRhO2VDG9c2ypWCsT237eDiLqi09rmbKoUetyGHq2uOIRoRS//kfoJckS0eUzzkDR+k2Q==}
+  /markdown-it@13.0.2:
+    resolution: {integrity: sha512-FtwnEuuK+2yVU7goGn/MJ0WBZMM9ZPgU9spqlFs7/A/pDIUNSOQZhUgOqYCficIuR2QaFnrt8LHqBWsbTAoI5w==}
     hasBin: true
     dependencies:
       argparse: 2.0.1
