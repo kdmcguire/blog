@@ -23,7 +23,7 @@ No site really wants us to say "None, please," but they have to give us the opti
 
 Other, less proactive (and less compliant) sites will just show you a banner telling you that by being here, you've accepted the cookies. It's too late!
 
-Earlier, I said "on my mobile", because on my desktop computer is much improved, hassle-free experience with Firefox and a few extensions. Browsing the internet is less annoying there. See the end of the post for a list of [my Firefox settings and extensions](/cookies-browsers-and-misplaced-efforts/#my-firefox-setup) that make it a nice way to surf the 'net!
+Earlier, I said "on my mobile", because on my desktop computer is much improved, hassle-free experience with Firefox and a few extensions. Browsing the internet is less annoying there. See the end of the post for a list of [my Firefox settings and extensions](https://kieran-mcguire.uk/posts/cookies-browsers-and-misplaced-efforts/#my-firefox-setup) that make it a nice way to surf the 'net!
 
 No more cookie banners. No more pop-ups asking me for granular consent. Mostly importantly, no unwanted cookies or tracking. And, so far, nothing's broken.
 
