@@ -28,7 +28,6 @@ Astro Theme Cactus is a simple opinionated starter built with the Astro framewor
 ## Key Features
 
 - Astro v3.0 Fast 🚀
-- View Transitions from [Astro](https://docs.astro.build/en/guides/view-transitions/)
 - TailwindCSS Utility classes
 - Accessible, semantic HTML markup
 - Responsive & SEO-friendly
@@ -151,7 +150,9 @@ import { GoogleAnalytics } from "astro-google-analytics";
 
 ## View Transitions
 
-This theme implements a default transition between routes with a fallback for unsupported browsers, visit Astro's [docs](https://docs.astro.build/en/guides/view-transitions/) to learn more. To remove it completely, go to `src/layouts/Base.astro` and remove the `<ViewTransitions>` component.
+This theme implements optional support for view transitions. Visit `src/site.config.ts` and set `includeViewTransitions` to `true` to include it. By setting it to true, a fallback of [none](https://docs.astro.build/en/guides/view-transitions/#fallback-control) is set for unsupported browsers, visit Astro's [docs](https://docs.astro.build/en/guides/view-transitions/) to learn more, view the implementation in `src/layouts/Base.astro`.
+
+Note: If you set a [named](https://docs.astro.build/en/guides/view-transitions/#naming-a-transition) transition, you may notice an issue with the theme switching button icon disappearing, this is due to an Astro bug with maintaining persistence. For a temporary solution this please see [this](https://github.com/chrismwilliams/astro-theme-cactus/pull/139/files) request.
 
 ## Deploy
 
