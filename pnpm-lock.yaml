@@ -18,8 +18,8 @@ dependencies:
     specifier: 3.0.1
     version: 3.0.1
   '@astrojs/tailwind':
-    specifier: 5.0.0
-    version: 5.0.0(astro@3.2.3)(tailwindcss@3.3.3)
+    specifier: 5.0.1
+    version: 5.0.1(astro@3.2.3)(tailwindcss@3.3.3)
   astro:
     specifier: 3.2.3
     version: 3.2.3
@@ -244,10 +244,10 @@ packages:
       zod: 3.21.1
     dev: false
 
-  /@astrojs/tailwind@5.0.0(astro@3.2.3)(tailwindcss@3.3.3):
-    resolution: {integrity: sha512-bMZZNNm/SW+ijUKMQDhdiuNWDdR3CubEKUHb2Ran4Arx1ikWn/kKIkFDXUV+MUnsLa7s19x9VMRlARRyKbqMkQ==}
+  /@astrojs/tailwind@5.0.1(astro@3.2.3)(tailwindcss@3.3.3):
+    resolution: {integrity: sha512-HzguDH+q1v8NhZIu245UtXfz5tuy4IAd/TND92z5vyftYtGdjDLdBeHhMH4Wd91/0sIPPNRz9NUfToprI636YQ==}
     peerDependencies:
-      astro: ^3.0.0
+      astro: ^3.2.3
       tailwindcss: ^3.0.24
     dependencies:
       astro: 3.2.3
