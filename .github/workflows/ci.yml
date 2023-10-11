@@ -17,15 +17,18 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
-      - name: Setup pnpm
+      - name: Setup npm
         id: node
-        uses: pnpm/action-setup@v2
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'npm'
       - name: Install
         id: install
-        run: pnpm install
+        run: npm ci
       - name: Build
         id: build
-        run: pnpm run build
+        run: npm run build
   auto-approve:
     if: ${{ github.actor == 'dependabot[bot]' }}
     needs: [checks]
