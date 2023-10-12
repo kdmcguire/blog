@@ -40,7 +40,7 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
   </p>
   {
     data.updatedDate && (
-      <span class="bg-quote/10 text-quote rounded-lg p-1">
+      <span class="rounded-lg bg-quote/10 p-1 text-quote">
         Last Updated:
         <FormattedDate
           class="dt-published ms-1"
@@ -109,7 +109,7 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
       d="m9 15l6-6m-4-3l.463-.536a5 5 0 0 1 7.071 7.072L18 13m-5 5l-.397.534a5.068 5.068 0 0 1-7.127 0a4.972 4.972 0 0 1 0-7.071L6 11"
     ></path>
   </svg>
-  <a class="u-url cactus-link" href={Astro.url}>Permalink</a>
+  <a class="u-url cactus-link" href={Astro.url}>permalink</a>
 </div>
 <em><p class="p-summary mt-4">{data.description}</p></em>
 <div class="hidden">
