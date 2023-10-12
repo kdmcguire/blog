@@ -65,8 +65,8 @@
     display: none;
   }
 
-  :root main a,
-  :root.dark main a {
+  :root main a[href*="kieran-mcguire.uk"],
+  :root.dark main a[href*="kieran-mcguire.uk"] {
     margin-right: 0;
   }
 }
