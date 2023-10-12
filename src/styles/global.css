@@ -31,4 +31,42 @@
   html body {
     @apply mx-auto flex min-h-screen max-w-3xl flex-col bg-bgColor px-8 pt-16 font-mono text-sm font-normal text-textColor antialiased;
   }
+
+  main a[href^="http"] {
+    margin-right: 1.25em;
+  }
+
+  :root main a[href^="http"]::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-left: 0.25em;
+    transform: translateY(0.25em);
+    background-size: 100%;
+    background-image: url(/external-link-dark.svg);
+  }
+
+  :root.dark main a[href^="http"]::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-left: 0.25em;
+    transform: translateY(0.25em);
+    background-size: 100%;
+    background-image: url(/external-link-light.svg);
+  }
+
+  :root main a[href*="kieran-mcguire.uk"]::after,
+  :root.dark main a[href*="kieran-mcguire.uk"]::after {
+    display: none;
+  }
+
+  :root main a[href*="kieran-mcguire.uk"],
+  :root.dark main a[href*="kieran-mcguire.uk"] {
+    margin-right: 0;
+  }
 }
