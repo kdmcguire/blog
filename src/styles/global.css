@@ -45,7 +45,7 @@
     margin-left: 0.25em;
     transform: translateY(0.25em);
     background-size: 100%;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMyMjI3MjAiIGQ9Ik0xNCAzdjJoMy41OWwtOS44MyA5LjgzbDEuNDEgMS40MUwxOSA2LjQxVjEwaDJWM20tMiAxNkg1VjVoN1YzSDVjLTEuMTEgMC0yIC44OS0yIDJ2MTRhMiAyIDAgMCAwIDIgMmgxNGEyIDIgMCAwIDAgMi0ydi03aC0ydjdaIi8+PC9zdmc+");
+    background-image: url(/external-link-dark.svg);
   }
 
   :root.dark main a[href^="http"]::after {
@@ -57,7 +57,7 @@
     margin-left: 0.25em;
     transform: translateY(0.25em);
     background-size: 100%;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiNjOGM5Y2IiIGQ9Ik0xNCAzdjJoMy41OWwtOS44MyA5LjgzbDEuNDEgMS40MUwxOSA2LjQxVjEwaDJWM20tMiAxNkg1VjVoN1YzSDVjLTEuMTEgMC0yIC44OS0yIDJ2MTRhMiAyIDAgMCAwIDIgMmgxNGEyIDIgMCAwIDAgMi0ydi03aC0ydjdaIi8+PC9zdmc+");
+    background-image: url(/external-link-light.svg);
   }
 
   :root main a[href*="kieran-mcguire.uk"]::after,
