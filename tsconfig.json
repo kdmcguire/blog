@@ -2,6 +2,7 @@
   "extends": "astro/tsconfigs/strictest",
   "compilerOptions": {
     "baseUrl": ".",
+    "lib": ["DOM"],
     "verbatimModuleSyntax": true,
     "paths": {
       "@/assets/*": ["src/assets/*"],
@@ -13,5 +14,6 @@
       "@/site-config": ["src/site.config.ts"]
     }
   },
+  "include": ["src", "*.ts"],
   "exclude": ["node_modules", "**/node_modules/*", ".vscode", "dist"]
 }
