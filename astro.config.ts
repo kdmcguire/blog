@@ -36,6 +36,13 @@ export default defineConfig({
       exclude: ["@resvg/resvg-js"],
     },
   },
+  redirects: {
+    "/about": "/",
+    "/adding-security-headers-through-netlify": "/posts/adding-security-headers-through-netlify",
+    "battlefield-2042-review": "/posts/battlefield-2042-review",
+    "cookies-browsers-and-misplaced-efforts": "/posts/cookies-browsers-and-misplaced-efforts",
+    "/cyberpunk-2077-review/": "/posts/cyberpunk-2077-review/",
+  },
 });
 
 function rawFonts(ext: Array<string>) {
