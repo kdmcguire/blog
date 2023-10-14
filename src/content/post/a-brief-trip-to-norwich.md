@@ -1,7 +1,7 @@
 ---
 title: "A brief trip to Norwich"
 publishDate: "14 October 2023"
-description: "Ingredients of a good city break: coffee, cake, and a cathedral cat."
+description: "Ingredients of a good city break: coffee, cake, and a cathedral cat"
 tags: ["life", "Norwich", "travel", "food"]
 coverImage:
   src: "@/assets/slice-and-dice-big-breakfast.jpg"
