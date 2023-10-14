@@ -14,7 +14,7 @@ We're both food-loving vegans, so our holidays are usually city breaks in places
 
 We were only there for three nights, but we had such a lovely time that I'm sure we'll go back before too long.
 
-Here are my highlights, in no particular order:
+Here are my highlights, in no particular order.
 
 ## The Tipsy Vegan
 
