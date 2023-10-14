@@ -6,6 +6,7 @@ tags: ["life", "Canterbury"]
 coverImage:
   src: "@/assets/canterbury-butchery-lane.jpg"
   alt: "A view of Canterbury Cathedral from Butchery Lane, lined with historic buildings"
+ogImage: "@/assets/canterbury-butchery-lane.jpg"
 ---
 
 Every Monday lunchtime, my partner and I walk into town to get a couple of vegan sausage rolls from our friendly local baked-goods supergiant. (You know the one.)
