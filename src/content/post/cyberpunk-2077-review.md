@@ -6,7 +6,7 @@ tags: ["reviews", "games"]
 coverImage:
   src: "@/assets/cyberpunk-2077.jpg"
   alt: "A view of Night City from the game Cyberpunk 2077"
-ogImage: "@/assets/cyberpunk-2077.jpg"
+ogImage: "/cyberpunk-2077.jpg"
 ---
 
 This game suffers from sub-par open-world AI (i.e. crowds and traffic), performance issues, and many, many bugs. The bugs I experienced were mostly minor, like things colliding badly, or multiple conversations running at the same time, but I did once have a quest become un-finishable until I went back and did something different. Other people have obviously experienced worse. BUT.

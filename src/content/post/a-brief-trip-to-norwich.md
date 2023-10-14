@@ -6,7 +6,7 @@ tags: ["life", "Norwich", "travel", "food"]
 coverImage:
   src: "@/assets/slice-and-dice-big-breakfast.jpg"
   alt: "The vegan 'Big Breakfast' at boardgame cafe Slice & Dice in Norwich"
-ogImage: "@/assets/slice-and-dice-big-breakfast.jpg"
+ogImage: "/slice-and-dice-big-breakfast.jpg"
 ---
 
 At the end of September, my partner and I enjoyed a trip to Norwich for a few days. As we were characteristically late to decide where we wanted to go and book everything, I'd say we were lucky that it went so well.
