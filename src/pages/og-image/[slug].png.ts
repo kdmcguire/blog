@@ -57,7 +57,7 @@ export async function GET({ params: { slug } }: APIContext) {
   return new Response(png, {
     headers: {
       "Content-Type": "image/png",
-      "Cache-Control": "public, max-age=10, immutable",
+      "Cache-Control": "public, max-age=31536000, immutable",
     },
   });
 }
