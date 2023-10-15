@@ -18,8 +18,10 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
         class="u-photo mb-4"
         src={profilePic}
         alt="Kieran McGuire"
-        width={profilePic.width / 2}
-        densities={[1.5, 2]}
+        height="200"
+        width="200"
+        densities={[1.5, 2, 4]}
+        quality="max"
       />
       <p class="mb-4"><em>Hi, I'm <span class="p-name">Kieran</span>.</em></p>
       <p class="p-note mb-4">
