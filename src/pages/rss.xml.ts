@@ -23,7 +23,7 @@ export const GET = async () => {
       description: post.data.description,
       content: sanitizeHtml(parser.render(post.body)),
       link: `posts/${post.slug}`,
-      author: `kieran-mcguire@outlook.com (${siteConfig.author})`,
+      author: `upj1za7dm@relay.firefox.com (${siteConfig.author})`,
     })),
   });
 };
