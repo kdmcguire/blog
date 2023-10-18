@@ -30,7 +30,7 @@
     "@tailwindcss/aspect-ratio": "0.4.2",
     "@tailwindcss/typography": "0.5.10",
     "@types/eslint": "8.44.4",
-    "@types/markdown-it": "13.0.2",
+    "@types/markdown-it": "13.0.3",
     "@types/sanitize-html": "2.9.2",
     "@typescript-eslint/eslint-plugin": "6.5.0",
     "@typescript-eslint/parser": "6.5.0",
