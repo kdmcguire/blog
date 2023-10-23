@@ -9,7 +9,10 @@ function diveChildren(item: TocItem, depth: number): Array<TocItem> {
     return item.subheadings;
   } else {
     // e.g., 2
-    return diveChildren(item.subheadings[item.subheadings.length - 1] as TocItem, depth - 1);
+    return diveChildren(
+      item.subheadings[item.subheadings.length - 1] as TocItem,
+      depth - 1,
+    );
   }
 }
 
