@@ -7,5 +7,5 @@ export function elementHasClass(element: HTMLElement, className: string) {
 }
 
 export function rootHasDarkClass() {
-	return elementHasClass(document.documentElement, "dark");
+  return elementHasClass(document.documentElement, "dark");
 }

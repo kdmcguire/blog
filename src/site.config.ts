@@ -35,12 +35,12 @@ export const menuLinks: Array<{ title: string; path: string }> = [
     path: "/",
   },
   {
-    title: "Now",
-    path: "/now/",
-  },
-  {
     title: "Blog",
     path: "/posts/",
+  },
+  {
+    title: "Now",
+    path: "/now/",
   },
   {
     title: "Blogroll",

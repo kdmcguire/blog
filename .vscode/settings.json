@@ -9,7 +9,6 @@
       "source.fixAll.markdownlint": true
     }
   },
-  "prettier.documentSelectors": ["**/*.astro"],
   "eslint.validate": [
     "javascript",
     "javascriptreact",
