@@ -26,18 +26,6 @@ jobs:
       - name: Install
         id: install
         run: npm ci
-      - name: Build
-        id: build
-        run: npm run build
-  auto-approve:
-    if: ${{ github.actor == 'dependabot[bot]' }}
-    needs: [checks]
-    permissions:
-      pull-requests: write
-    runs-on: ubuntu-latest
-    steps:
-      - name: Approve a PR
-        run: gh pr review --approve "$PR_URL"
-        env:
-          PR_URL: ${{github.event.pull_request.html_url}}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Astro check
+        id: check
+        run: npm run check
