@@ -5,9 +5,13 @@ import { html } from "satori-html";
 import { Resvg } from "@resvg/resvg-js";
 import { siteConfig } from "@/site-config";
 import { getAllPosts, getFormattedDate } from "@/utils";
+import { readFileSync } from "fs";
 
-import RobotoMono from "@/assets/roboto-mono-regular.ttf";
-import RobotoMonoBold from "@/assets/roboto-mono-700.ttf";
+const AtkinsonHyperlegiblePath = `${process.cwd()}/public/fonts/Atkinson-Hyperlegible-Regular-102.ttf`;
+const AtkinsonHyperlegibleFile = readFileSync(AtkinsonHyperlegiblePath);
+
+const AtkinsonHyperlegibleBoldPath = `${process.cwd()}/public/fonts/Atkinson-Hyperlegible-Bold-102.ttf`;
+const AtkinsonHyperlegibleBoldFile = readFileSync(AtkinsonHyperlegibleBoldPath);
 
 const ogOptions: SatoriOptions = {
 	width: 1200,
@@ -15,14 +19,14 @@ const ogOptions: SatoriOptions = {
 	// debug: true,
 	fonts: [
 		{
-			name: "Roboto Mono",
-			data: Buffer.from(RobotoMono),
+			name: "Atkinson Hyperlegible",
+			data: AtkinsonHyperlegibleFile,
 			weight: 400,
 			style: "normal",
 		},
 		{
-			name: "Roboto Mono",
-			data: Buffer.from(RobotoMonoBold),
+			name: "Atkinson Hyperlegible Bold",
+			data: AtkinsonHyperlegibleBoldFile,
 			weight: 700,
 			style: "normal",
 		},
@@ -31,13 +35,13 @@ const ogOptions: SatoriOptions = {
 
 const markup = (title: string, pubDate: string) =>
 	html`<div
-    tw="flex w-full h-full bg-cover bg-no-repeat bg-center"
+    tw="flex w-full h-full"
     style="background-image: url(https://kieran-mcguire.uk/default-social-card.jpg)"
   >
         <div tw="flex flex-col w-full h-full bg-cover text-white bg-slate-800/75">
-          <h1 tw="text-6xl ml-8 mt-24 font-bold leading-snug">${title}</h1>
-          <p tw="text-2xl ml-8 mb-6">${pubDate}</p>
-          <p tw="text-2xl ml-8">by ${siteConfig.author}</p>
+          <h1 tw="text-6xl ml-30 mr-30 mt-30 font-bold leading-snug">${title}</h1>
+          <p tw="text-2xl ml-30 mr-30 mb-6">${pubDate}</p>
+          <p tw="text-2xl ml-30 mr-30">by ${siteConfig.author}</p>
         </div>
     </div>
   </div>`;

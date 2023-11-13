@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+	@font-face {
+		font-family: Atkinson Hyperlegible;
+		font-weight: 400;
+		src: url(/fonts/Atkinson-Hyperlegible-Regular-102.ttf) format("truetype");
+	}
+
 	:root {
 		color-scheme: light;
 		/* https://tailwindcss.com/docs/customizing-colors#using-css-variables */
