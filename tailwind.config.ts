@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
-import { fontFamily } from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 export default {
 	content: ["./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}"],
@@ -29,8 +29,9 @@ export default {
 			},
 			fontFamily: {
 				// Add any custom fonts here
-				sans: [...fontFamily.sans],
-				serif: [...fontFamily.serif],
+				sans: ["Atkinson Hyperlegible", ...defaultTheme.fontFamily.sans],
+				serif: ["Atkinson Hyperlegible", ...defaultTheme.fontFamily.serif],
+				mono: [...defaultTheme.fontFamily.mono],
 			},
 			transitionProperty: {
 				height: "height",
