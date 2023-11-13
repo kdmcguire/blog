@@ -30,7 +30,6 @@ export default {
 			fontFamily: {
 				// Add any custom fonts here
 				sans: ["Atkinson Hyperlegible", ...defaultTheme.fontFamily.sans],
-				serif: ["Atkinson Hyperlegible", ...defaultTheme.fontFamily.serif],
 				mono: [...defaultTheme.fontFamily.mono],
 			},
 			transitionProperty: {

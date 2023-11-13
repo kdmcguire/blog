@@ -9,8 +9,6 @@ import Footer from "@/components/layout/Footer";
 import SkipLink from "@/components/SkipLink";
 import { siteConfig } from "@/site-config";
 
-import "@fontsource/atkinson-hyperlegible";
-
 interface Props {
 	meta: SiteMeta;
 }
@@ -22,7 +20,12 @@ const {
 
 <html lang={siteConfig.lang}>
 	<head>
-		<BaseHead title={title} description={description} ogImage={ogImage} articleDate={articleDate} />
+		<BaseHead
+			title={title}
+			description={description}
+			ogImage={ogImage}
+			articleDate={articleDate}
+		/>
 		{
 			/* 
 			Fallback set to none in non-supporting browsers -> https://docs.astro.build/en/guides/view-transitions/#fallback-control
