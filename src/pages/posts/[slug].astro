@@ -4,11 +4,11 @@ import PostLayout from "@/layouts/BlogPost";
 import { getAllPosts } from "@/utils";
 
 export const getStaticPaths = (async () => {
-  const blogEntries = await getAllPosts();
-  return blogEntries.map((entry) => ({
-    params: { slug: entry.slug },
-    props: { entry },
-  }));
+	const blogEntries = await getAllPosts();
+	return blogEntries.map((entry) => ({
+		params: { slug: entry.slug },
+		props: { entry },
+	}));
 }) satisfies GetStaticPaths;
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
@@ -18,5 +18,5 @@ const { Content } = await entry.render();
 ---
 
 <PostLayout post={entry}>
-  <Content />
+	<Content />
 </PostLayout>

@@ -10,32 +10,32 @@ import SkipLink from "@/components/SkipLink";
 import { siteConfig } from "@/site-config";
 
 interface Props {
-  meta: SiteMeta;
+	meta: SiteMeta;
 }
 
 const {
-  meta: { title, description = siteConfig.description, ogImage, articleDate },
+	meta: { title, description = siteConfig.description, ogImage, articleDate },
 } = Astro.props;
 ---
 
 <html lang={siteConfig.lang}>
-  <head>
-    <BaseHead title={title} description={description} ogImage={ogImage} articleDate={articleDate} />
-    {
+	<head>
+		<BaseHead title={title} description={description} ogImage={ogImage} articleDate={articleDate} />
+		{
 			/* 
 			Fallback set to none in non-supporting browsers -> https://docs.astro.build/en/guides/view-transitions/#fallback-control
 			This is set to false by default in src/site.config.ts 
 			*/
 		}
 		{siteConfig.includeViewTransitions && <ViewTransitions fallback="none" />}
-  </head>
-  <body>
-    <ThemeProvider />
-    <SkipLink />
-    <Header />
-    <main id="main">
-      <slot />
-    </main>
-    <Footer />
-  </body>
+	</head>
+	<body>
+		<ThemeProvider />
+		<SkipLink />
+		<Header />
+		<main id="main">
+			<slot />
+		</main>
+		<Footer />
+	</body>
 </html>
