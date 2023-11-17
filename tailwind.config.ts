@@ -28,7 +28,7 @@ export default {
 			},
 			fontFamily: {
 				// Add any custom fonts here
-				sans: ["Atkinson Hyperlegible", ...defaultTheme.fontFamily.sans],
+				sans: [...defaultTheme.fontFamily.sans],
 				serif: [...defaultTheme.fontFamily.serif],
 				mono: [...defaultTheme.fontFamily.mono],
 			},
