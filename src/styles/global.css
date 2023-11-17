@@ -3,14 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-	//@font-face {
-	//	font-family: Atkinson Hyperlegible;
-	//	font-weight: 400;
-	//	font-style: normal;
-	//	src: url(/fonts/Atkinson-Hyperlegible-Regular-102.ttf) format("truetype");
-	//	font-display: swap;
-	//}
-
 	:root {
 		--theme-bg: 210deg 6% 12%;
 		--theme-link: 330deg 49% 67%;
