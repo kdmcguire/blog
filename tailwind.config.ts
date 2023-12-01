@@ -29,9 +29,9 @@ export default {
 			},
 			fontFamily: {
 				// Add any custom fonts here
-				sans: [...defaultTheme.fontFamily.sans],
-				serif: [...defaultTheme.fontFamily.serif],
-				mono: [...defaultTheme.fontFamily.mono],
+				sans: ["Atkinson Hyperlegible", ...defaultTheme.fontFamily.sans],
+				serif: ["Atkinson Hyperlegible", ...defaultTheme.fontFamily.serif],
+				mono: ["Atkinson Hyperlegible", ...defaultTheme.fontFamily.mono],
 			},
 			transitionProperty: {
 				height: "height",
