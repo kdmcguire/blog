@@ -6,6 +6,7 @@
 		"dev": "astro dev",
 		"start": "astro dev",
 		"build": "astro build",
+		"postbuild": "pagefind --site dist",
 		"preview": "astro preview",
 		"format": "prettier -w --cache .",
 		"check": "astro check"
@@ -17,8 +18,11 @@
 		"@astrojs/rss": "3.0.0",
 		"@astrojs/sitemap": "3.0.3",
 		"@astrojs/tailwind": "5.0.2",
+		"@pagefind/default-ui": "1.0.4",
 		"astro": "3.5.5",
 		"astro-icon": "0.8.1",
+		"netlify-plugin-append-redirects": "0.0.2",
+		"pagefind": "1.0.4",
 		"satori": "0.10.9",
 		"satori-html": "0.3.2",
 		"sharp": "0.32.6"

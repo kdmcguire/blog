@@ -3,6 +3,7 @@ import { ViewTransitions } from "astro:transitions";
 
 import type { SiteMeta } from "@/types";
 import BaseHead from "@/components/BaseHead";
+import ThemeProvider from "@/components/ThemeProvider";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import SkipLink from "@/components/SkipLink";
@@ -34,6 +35,7 @@ const {
 		{siteConfig.includeViewTransitions && <ViewTransitions fallback="none" />}
 	</head>
 	<body>
+		<ThemeProvider />
 		<SkipLink />
 		<Header />
 		<main id="main">

@@ -1,4 +1,6 @@
 ---
+import ThemeToggle from "../ThemeToggle.astro";
+import Search from "../Search.astro";
 import { menuLinks } from "@/site-config";
 
 const url = new URL(Astro.request.url);
@@ -64,7 +66,9 @@ const url = new URL(Astro.request.url);
 			}
 		</nav>
 	</div>
-	<mobile-button class="ms-auto">
+	<Search />
+	<ThemeToggle />
+	<mobile-button>
 		<button
 			id="toggle-navigation-menu"
 			class="group relative ms-4 h-7 w-7 sm:invisible sm:hidden"
