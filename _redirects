@@ -6,5 +6,5 @@
 /cookies-browsers-and-misplaced-efforts     /posts/cookies-browsers-and-misplaced-efforts
 /cyberpunk-2077-review                      /posts/cyberpunk-2077-review
 
-https://kieran-mcguire.uk                   https://kieranmcguire.uk
-https://kieran-mcguire.uk/*                 https://kieranmcguire.uk/:splat
+https://kieran-mcguire.uk                   https://kieranmcguire.uk 301!
+https://kieran-mcguire.uk/*                 https://kieranmcguire.uk/:splat 301!
