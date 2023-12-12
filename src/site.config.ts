@@ -23,8 +23,8 @@ export const siteConfig: SiteConfig = {
 	// Include view-transitions: https://docs.astro.build/en/guides/view-transitions/
 	includeViewTransitions: false,
 	webmentions: {
-		link: "https://webmention.io/kieran-mcguire.uk/webmention",
-		pingback: "https://webmention.io/kieran-mcguire.uk/xmlrpc",
+		link: "https://webmention.io/kieranmcguire.uk/webmention",
+		pingback: "https://webmention.io/kieranmcguire.uk/xmlrpc",
 	},
 };
 
