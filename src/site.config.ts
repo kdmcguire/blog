@@ -24,7 +24,6 @@ export const siteConfig: SiteConfig = {
 	includeViewTransitions: false,
 	webmentions: {
 		link: "https://webmention.io/kieranmcguire.uk/webmention",
-		pingback: "https://webmention.io/kieranmcguire.uk/xmlrpc",
 	},
 };
 

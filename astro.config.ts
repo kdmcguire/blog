@@ -3,8 +3,8 @@ import fs from "fs";
 import mdx from "@astrojs/mdx";
 import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
-import prefetch from "@astrojs/prefetch";
 import remarkUnwrapImages from "remark-unwrap-images";
+import rehypeExternalLinks from "rehype-external-links";
 import { remarkReadingTime } from "./src/utils/remark-reading-time";
 
 // https://astro.build/config
@@ -13,6 +13,12 @@ export default defineConfig({
 	site: "https://kieranmcguire.uk/",
 	markdown: {
 		remarkPlugins: [remarkUnwrapImages, remarkReadingTime],
+		rehypePlugins: [
+			[
+				rehypeExternalLinks,
+				{ target: "_blank", rel: ["nofollow, noopener, noreferrer"] },
+			],
+		],
 		remarkRehype: { footnoteLabelProperties: { className: [""] } },
 		shikiConfig: {
 			theme: "dracula",
@@ -25,11 +31,12 @@ export default defineConfig({
 			applyBaseStyles: false,
 		}),
 		sitemap(),
-		prefetch(),
 	],
 	image: {
 		domains: ["webmention.io"],
 	},
+	// https://docs.astro.build/en/guides/prefetch/
+	prefetch: true,
 	vite: {
 		plugins: [rawFonts([".ttf"])],
 		optimizeDeps: {

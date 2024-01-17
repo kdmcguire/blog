@@ -1,6 +1,6 @@
 {
 	"name": "astro-cactus",
-	"version": "3.4.2",
+	"version": "3.6.1",
 	"private": false,
 	"scripts": {
 		"dev": "astro dev",
@@ -8,13 +8,12 @@
 		"build": "astro build",
 		"postbuild": "pagefind --site dist",
 		"preview": "astro preview",
-		"format": "prettier -w --cache .",
+		"format": "prettier -w --cache . && prettier -w --cache **/*.astro",
 		"check": "astro check"
 	},
 	"dependencies": {
 		"@astrojs/check": "0.3.2",
 		"@astrojs/mdx": "2.0.1",
-		"@astrojs/prefetch": "0.4.1",
 		"@astrojs/rss": "4.0.1",
 		"@astrojs/sitemap": "3.0.3",
 		"@astrojs/tailwind": "5.0.3",
@@ -23,6 +22,7 @@
 		"astro-icon": "0.8.2",
 		"netlify-plugin-append-redirects": "0.0.2",
 		"pagefind": "1.0.4",
+		"rehype-external-links": "3.0.0",
 		"satori": "0.10.11",
 		"satori-html": "0.3.2",
 		"sharp": "0.33.0"

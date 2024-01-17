@@ -10,11 +10,17 @@ const { title, description, ogImage, articleDate } = Astro.props;
 const titleSeparator = "|";
 const siteTitle = `${title} ${titleSeparator} ${siteConfig.title}`;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const socialImageURL = new URL(ogImage ? ogImage : "/default-social-card.jpg", Astro.url).href;
+const socialImageURL = new URL(
+	ogImage ? ogImage : "/default-social-card.jpg",
+	Astro.url,
+).href;
 ---
 
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+<meta
+	name="viewport"
+	content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <title>{siteTitle}</title>
 
@@ -63,7 +69,12 @@ const socialImageURL = new URL(ogImage ? ogImage : "/default-social-card.jpg", A
 <link rel="sitemap" href="/sitemap-index.xml" />
 
 {/* RSS auto-discovery */}
-<link rel="alternate" type="application/rss+xml" title={siteConfig.title} href="/rss.xml" />
+<link
+	rel="alternate"
+	type="application/rss+xml"
+	title={siteConfig.title}
+	href="/rss.xml"
+/>
 
 {/* Webmentions */}
 {
@@ -76,3 +87,5 @@ const socialImageURL = new URL(ogImage ? ogImage : "/default-social-card.jpg", A
 		</>
 	)
 }
+
+<meta name="generator" content={Astro.generator} />
