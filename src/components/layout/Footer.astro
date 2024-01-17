@@ -5,14 +5,16 @@ import { Icon } from "astro-icon";
 const year = new Date().getFullYear();
 ---
 
-<footer class="gap-y-2 pb-4 pt-20 align-top text-xs text-gray-500">
+<footer
+	class="gap-y-2 pb-4 pt-20 align-top text-xs text-gray-600 dark:text-gray-400"
+>
 	<div class="mt-0">
 		Copyright &copy; {year}{" "}
 		{siteConfig.author}
 	</div>
 	<nav
 		aria-label="More on this site"
-		class="mt-2 gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-gray-500"
+		class="mt-2 gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-gray-600 dark:sm:divide-gray-600"
 	>
 		<a
 			href="/"
