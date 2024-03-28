@@ -1,6 +1,6 @@
 import rss from "@astrojs/rss";
 import { siteConfig } from "@/site-config";
-import { getAllPosts } from "@/utils";
+import { getAllPosts } from "src/utils/post";
 import sanitizeHtml from "sanitize-html";
 import MarkdownIt from "markdown-it";
 
