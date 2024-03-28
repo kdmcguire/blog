@@ -29,6 +29,9 @@ dependencies:
   markdown-it:
     specifier: 14.1.0
     version: 14.1.0
+  netlify-plugin-append-redirects:
+    specifier: 0.0.2
+    version: 0.0.2
   rehype-external-links:
     specifier: 3.0.0
     version: 3.0.0
@@ -5595,6 +5598,10 @@ packages:
   /natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
+
+  /netlify-plugin-append-redirects@0.0.2:
+    resolution: {integrity: sha512-HZ1YF4J/IeVfcO/j6zctwLrGABCPsMMExLMZQARhncAlzsGfM2SoVkp9wk3UUaFrQSdakIIxetxMzIgaCWYTrA==}
+    dev: false
 
   /nlcst-to-string@3.1.1:
     resolution: {integrity: sha512-63mVyqaqt0cmn2VcI2aH6kxe1rLAmSROqHMA0i4qqg1tidkfExgpb0FGMikMCn86mw5dFtBtEANfmSSK7TjNHw==}

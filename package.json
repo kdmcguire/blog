@@ -20,6 +20,7 @@
 		"astro-expressive-code": "0.33.5",
 		"astro-icon": "1.1.0",
 		"markdown-it": "14.1.0",
+		"netlify-plugin-append-redirects": "0.0.2",
 		"rehype-external-links": "3.0.0",
 		"sanitize-html": "2.13.0",
 		"satori": "0.10.13",
