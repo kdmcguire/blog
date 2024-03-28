@@ -1,9 +1,5 @@
-import fs from "node:fs";
-import type {
-	WebmentionsFeed,
-	WebmentionsCache,
-	WebmentionsChildren,
-} from "@/types";
+import * as fs from "node:fs";
+import type { WebmentionsFeed, WebmentionsCache, WebmentionsChildren } from "@/types";
 
 const DOMAIN = import.meta.env.SITE;
 const API_TOKEN = import.meta.env.WEBMENTION_API_KEY;
@@ -40,10 +36,7 @@ async function fetchWebmentions(timeFrom: string | null, perPage = 1000) {
 }
 
 // Merge cached entries [a] with fresh webmentions [b], merge by wm-id
-function mergeWebmentions(
-	a: WebmentionsCache,
-	b: WebmentionsFeed,
-): WebmentionsChildren[] {
+function mergeWebmentions(a: WebmentionsCache, b: WebmentionsFeed): WebmentionsChildren[] {
 	return Array.from(
 		[...a.children, ...b.children]
 			.reduce((map, obj) => map.set(obj["wm-id"], obj), new Map())
@@ -58,10 +51,7 @@ export function filterWebmentions(webmentions: WebmentionsChildren[]) {
 		if (!validWebmentionTypes.includes(webmention["wm-property"])) return false;
 
 		// make sure 'mention-of' or 'in-reply-to' has text content.
-		if (
-			webmention["wm-property"] === "mention-of" ||
-			webmention["wm-property"] === "in-reply-to"
-		) {
+		if (webmention["wm-property"] === "mention-of" || webmention["wm-property"] === "in-reply-to") {
 			return webmention.content && webmention.content.text !== "";
 		}
 

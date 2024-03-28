@@ -1,10 +1,13 @@
 import type { Config } from "tailwindcss";
+import { fontFamily } from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
-import defaultTheme from "tailwindcss/defaultTheme";
 
 export default {
-	content: ["./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}"],
-	darkMode: "class",
+	content: [
+		"./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}",
+		"!./src/pages/og-image/[slug].png.ts",
+	],
+	darkMode: ["class", '[data-theme="dark"]'],
 	corePlugins: {
 		// disable aspect ratio as per docs -> @tailwindcss/aspect-ratio
 		aspectRatio: false,
@@ -29,9 +32,8 @@ export default {
 			},
 			fontFamily: {
 				// Add any custom fonts here
-				sans: ["Atkinson Hyperlegible", ...defaultTheme.fontFamily.sans],
-				serif: [...defaultTheme.fontFamily.serif],
-				mono: [...defaultTheme.fontFamily.mono],
+				sans: ["Atkinson Hyperlegible", ...fontFamily.sans],
+				serif: [...fontFamily.serif],
 			},
 			transitionProperty: {
 				height: "height",

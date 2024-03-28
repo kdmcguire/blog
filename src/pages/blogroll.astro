@@ -1,9 +1,8 @@
 ---
-import PageLayout from "@/layouts/Base";
+import PageLayout from "@/layouts/Base.astro";
 const meta = {
 	title: "Blogroll",
-	description:
-		"Check out some other good blogs I follow. If you like them, follow them too!",
+	description: "Check out some other good blogs I follow. If you like them, follow them too!",
 };
 ---
 
@@ -12,7 +11,9 @@ const meta = {
 		<h1 class="title mb-6">Blogroll</h1>
 		<p class="mb-4">A.k.a. some blogs I follow</p>
 		<ul class="mb-4 list-inside list-disc">
-			<li><a href="https://brr.fyi/" class="cactus-link">brr.fyi</a></li>
+			<li>
+				<a href="https://brr.fyi/" class="cactus-link">brr.fyi</a>
+			</li>
 			<li>
 				<a href="https://cassie.codes/" class="cactus-link">cassie.codes</a>
 			</li>
@@ -22,11 +23,15 @@ const meta = {
 			<li>
 				<a href="https://dreadships.com/" class="cactus-link">dreadships.com</a>
 			</li>
-			<li><a href="https://eli.li/" class="cactus-link">eli.li</a></li>
+			<li>
+				<a href="https://eli.li/" class="cactus-link">eli.li</a>
+			</li>
 			<li>
 				<a href="https://geepawhill.org/" class="cactus-link">geepawhill.org</a>
 			</li>
-			<li><a href="https://heyged.dev/" class="cactus-link">heyged.dev</a></li>
+			<li>
+				<a href="https://heyged.dev/" class="cactus-link">heyged.dev</a>
+			</li>
 			<li>
 				<a href="https://newsletter.mollywhite.net/" class="cactus-link"
 					>newsletter.mollywhite.net</a
@@ -38,19 +43,16 @@ const meta = {
 				>
 			</li>
 			<li>
-				<a href="https://visitmy.website/" class="cactus-link"
-					>visitmy.website</a
-				>
+				<a href="https://visitmy.website/" class="cactus-link">visitmy.website</a>
 			</li>
 			<li>
 				<a href="https://www.zachleat.com/" class="cactus-link">zachleat.com</a>
 			</li>
 		</ul>
 		<p class="mb-4">
-			To find more blogs recommended by other people, or to find out the answer
-			to the question "what da heck is a blogroll?", check out <a
-				class="cactus-link"
-				href="https://blogroll.org">blogroll.org</a
+			To find more blogs recommended by other people, or to find out the answer to the question
+			"what da heck is a blogroll?", check out <a class="cactus-link" href="https://blogroll.org"
+				>blogroll.org</a
 			>.
 		</p>
 	</section>

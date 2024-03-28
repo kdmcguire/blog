@@ -1,11 +1,12 @@
 ---
 import type { CollectionEntry } from "astro:content";
 
+import BlogHero from "@/components/blog/Hero.astro";
+import { Icon } from "astro-icon/components";
+import TOC from "@/components/blog/TOC.astro";
+import WebMentions from "@/components/blog/webmentions/index.astro";
+
 import BaseLayout from "./Base.astro";
-import BlogHero from "@/components/blog/Hero";
-import TOC from "@/components/blog/TOC";
-import WebMentions from "@/components/blog/webmentions/index";
-import { Icon } from "astro-icon";
 
 interface Props {
 	post: CollectionEntry<"post">;
@@ -13,7 +14,7 @@ interface Props {
 
 const { post } = Astro.props;
 const {
-	data: { title, description, ogImage, publishDate, updatedDate },
+	data: { description, ogImage, publishDate, title, updatedDate },
 	slug,
 } = post;
 const socialImage = ogImage ?? `/og-image/${slug}.png`;
@@ -22,7 +23,7 @@ const { headings } = await post.render();
 const emailLink = `mailto:upj1za7dm@relay.firefox.com?subject=Blog post "${title}"`;
 ---
 
-<BaseLayout meta={{ title, description, articleDate, ogImage: socialImage }}>
+<BaseLayout meta={{ articleDate, description, ogImage: socialImage, title }}>
 	<div class="gap-x-10 lg:flex lg:items-start">
 		{!!headings.length && <TOC headings={headings} />}
 		<article class="h-entry flex-grow break-words" data-pagefind-body>
@@ -34,8 +35,12 @@ const emailLink = `mailto:upj1za7dm@relay.firefox.com?subject=Blog post "${title
 				<WebMentions />
 				<hr />
 				<p>
-					<Icon name="mdi:email-fast" class="inline h-4 w-4 pb-0.5" /> Want to
-					chat about this post, but not on Mastodon? <a href={emailLink}
+					<Icon
+						aria-hidden="true"
+						class="inline h-4 w-4 pb-0.5"
+						focusable="false"
+						name="mdi:email-fast"
+					/> Want to chat about this post, but not on Mastodon? <a href={emailLink}
 						>Send me an email!</a
 					>
 				</p>
@@ -43,4 +48,42 @@ const emailLink = `mailto:upj1za7dm@relay.firefox.com?subject=Blog post "${title
 		</article>
 	</div>
 	<a href="https://brid.gy/publish/mastodon" class="hidden">Bridgy</a>
+
+	<button
+		aria-label="Back to Top"
+		class="z-90 fixed bottom-8 end-4 flex h-10 w-10 translate-y-28 items-center justify-center rounded-full border-2 border-transparent bg-zinc-200 text-3xl opacity-0 transition-all duration-300 hover:border-zinc-400 data-[show=true]:translate-y-0 data-[show=true]:opacity-100 dark:bg-zinc-700 sm:end-8 sm:h-12 sm:w-12"
+		data-show="false"
+		id="to-top-btn"
+		><svg
+			aria-hidden="true"
+			class="h-6 w-6"
+			fill="none"
+			focusable="false"
+			stroke="currentColor"
+			stroke-width="2"
+			viewBox="0 0 24 24"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<path d="M4.5 15.75l7.5-7.5 7.5 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+		</svg>
+	</button>
 </BaseLayout>
+
+<script>
+	const scrollBtn = document.getElementById("to-top-btn") as HTMLButtonElement;
+	const targetHeader = document.getElementById("blog-hero") as HTMLDivElement;
+
+	function callback(entries: IntersectionObserverEntry[]) {
+		entries.forEach((entry) => {
+			// only show the scroll to top button when the heading is out of view
+			scrollBtn.dataset.show = (!entry.isIntersecting).toString();
+		});
+	}
+
+	scrollBtn.addEventListener("click", () => {
+		document.documentElement.scrollTo({ behavior: "smooth", top: 0 });
+	});
+
+	const observer = new IntersectionObserver(callback);
+	observer.observe(targetHeader);
+</script>
