@@ -34,7 +34,7 @@
 		"@resvg/resvg-js": "2.6.0",
 		"@tailwindcss/aspect-ratio": "0.4.2",
 		"@tailwindcss/typography": "0.5.12",
-		"@types/eslint": "8.56.5",
+		"@types/eslint": "8.56.6",
 		"@types/markdown-it": "13.0.7",
 		"@types/sanitize-html": "2.11.0",
 		"@typescript-eslint/eslint-plugin": "7.4.0",
