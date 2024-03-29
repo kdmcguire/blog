@@ -12,11 +12,11 @@
 		"check": "astro check"
 	},
 	"dependencies": {
-		"@astrojs/mdx": "2.2.0",
+		"@astrojs/mdx": "2.2.2",
 		"@astrojs/rss": "4.0.5",
-		"@astrojs/sitemap": "3.1.1",
+		"@astrojs/sitemap": "3.1.2",
 		"@astrojs/tailwind": "5.1.0",
-		"astro": "4.5.5",
+		"astro": "4.5.12",
 		"astro-expressive-code": "0.33.5",
 		"astro-icon": "1.1.0",
 		"markdown-it": "14.1.0",
@@ -28,7 +28,7 @@
 		"sharp": "0.33.2"
 	},
 	"devDependencies": {
-		"@astrojs/check": "0.5.9",
+		"@astrojs/check": "0.5.10",
 		"@iconify-json/mdi": "1.1.64",
 		"@pagefind/default-ui": "1.0.4",
 		"@resvg/resvg-js": "2.6.0",
