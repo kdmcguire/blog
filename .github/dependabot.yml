@@ -9,9 +9,9 @@ updates:
         patterns:
           - "astro"
           - "@astrojs/*"
-    open-pull-requests-limit: 1
+    open-pull-requests-limit: 20
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
-    open-pull-requests-limit: 1
+    open-pull-requests-limit: 10
