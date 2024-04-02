@@ -9,6 +9,22 @@ updates:
         patterns:
           - "astro"
           - "@astrojs/*"
+      eslint:
+        patterns:
+          - "eslint"
+          - "@types/eslint"
+      markdown-it:
+        patterns:
+          - "markdown-it"
+          - "@types/markdown-it"
+      sanitize-html:
+        patterns:
+          - "sanitize-html"
+          - "@types/sanitize-html"
+      typescript-eslint:
+        patterns:
+          - "@typescript-eslint/eslint-plugin"
+          - "@typescript-eslint/parser"
     open-pull-requests-limit: 20
   - package-ecosystem: "github-actions"
     directory: "/"
