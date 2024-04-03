@@ -17,6 +17,10 @@ updates:
         patterns:
           - "markdown-it"
           - "@types/markdown-it"
+      pagefind:
+        patterns:
+          - "pagefind"
+          - "@pagefind/default-ui"
       sanitize-html:
         patterns:
           - "sanitize-html"
