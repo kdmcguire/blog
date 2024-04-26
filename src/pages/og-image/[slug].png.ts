@@ -33,7 +33,7 @@ const ogOptions: SatoriOptions = {
 const markup = (title: string, pubDate: string) =>
 	html`<div
     tw="flex w-full h-full bg-cover bg-no-repeat bg-center"
-    style="background-image: url(http://localhost:4321/default-social-card.jpg)"
+    style="background-image: url(https://kieranmcguire.uk/default-social-card.jpg)"
   >
         <div tw="flex flex-col w-full h-full bg-cover text-white bg-slate-800/75">
           <h1 tw="text-6xl ml-8 mt-24 font-bold leading-snug">${title}</h1>
