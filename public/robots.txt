@@ -30,4 +30,4 @@ User-agent: Seekr
 User-agent: YouBot
 Disallow: /
 
-Sitemap: https://kieran-mcguire.uk/sitemap-index.xml
+Sitemap: https://kieranmcguire.uk/sitemap-index.xml
