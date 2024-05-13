@@ -95,8 +95,8 @@ devDependencies:
     specifier: 3.6.1
     version: 3.6.1(@typescript-eslint/parser@7.8.0)(eslint-plugin-import@2.29.1)(eslint@8.57.0)
   eslint-plugin-astro:
-    specifier: 1.1.2
-    version: 1.1.2(eslint@8.57.0)(typescript@5.4.5)
+    specifier: 1.2.0
+    version: 1.2.0(eslint@8.57.0)(typescript@5.4.5)
   eslint-plugin-deprecation:
     specifier: 2.0.0
     version: 2.0.0(eslint@8.57.0)(typescript@5.4.5)
@@ -2566,7 +2566,7 @@ packages:
       '@astrojs/compiler': 2.8.0
       '@typescript-eslint/scope-manager': 7.8.0
       '@typescript-eslint/types': 7.8.0
-      '@typescript-eslint/typescript-estree': 7.7.0(typescript@5.4.5)
+      '@typescript-eslint/typescript-estree': 7.8.0(typescript@5.4.5)
       astrojs-compiler-sync: 1.0.0(@astrojs/compiler@2.8.0)
       debug: 4.3.4
       entities: 4.5.0
@@ -3628,8 +3628,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-astro@1.1.2(eslint@8.57.0)(typescript@5.4.5):
-    resolution: {integrity: sha512-bVKnu0SH5hMxiw0k/gOpbQxZMztW8EYOv1WnK+ofOP1offosmexbYz087kqZ7kFYe2j7Yoz6UIJxisdjFgdTbw==}
+  /eslint-plugin-astro@1.2.0(eslint@8.57.0)(typescript@5.4.5):
+    resolution: {integrity: sha512-Z2b/7a9EUNu8PWch6/fUKXTCj10hrbdVsR1CmUgke5nfrJuej+uUnL5z5hd9/IIWxLdSbk5Fowf/nyfbmhRmDQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.57.0'
