@@ -107,8 +107,8 @@ devDependencies:
     specifier: 6.8.0
     version: 6.8.0(eslint@8.57.0)
   eslint-plugin-markdown:
-    specifier: 4.0.1
-    version: 4.0.1(eslint@8.57.0)
+    specifier: 5.0.0
+    version: 5.0.0(eslint@8.57.0)
   eslint-plugin-perfectionist:
     specifier: 2.10.0
     version: 2.10.0(astro-eslint-parser@0.16.3)(eslint@8.57.0)(typescript@5.4.5)
@@ -1070,7 +1070,7 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
       ajv: 6.12.6
-      debug: 4.3.4
+      debug: 4.3.5
       espree: 9.6.1
       globals: 13.24.0
       ignore: 5.3.1
@@ -1125,7 +1125,7 @@ packages:
     engines: {node: '>=10.10.0'}
     dependencies:
       '@humanwhocodes/object-schema': 2.0.3
-      debug: 4.3.4
+      debug: 4.3.5
       minimatch: 3.1.2
     transitivePeerDependencies:
       - supports-color
@@ -3789,8 +3789,8 @@ packages:
       object.fromentries: 2.0.8
     dev: true
 
-  /eslint-plugin-markdown@4.0.1(eslint@8.57.0):
-    resolution: {integrity: sha512-5/MnGvYU0i8MbHH5cg8S+Vl3DL+bqRNYshk1xUO86DilNBaxtTkhH+5FD0/yO03AmlI6+lfNFdk2yOw72EPzpA==}
+  /eslint-plugin-markdown@5.0.0(eslint@8.57.0):
+    resolution: {integrity: sha512-kY2u9yDhzvfZ0kmRTsvgm3mTnvZgTSGIIPeHg3yesSx4R5CTCnITUjCPhzCD1MUhNcqHU5Tr6lzx+02EclVPbw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8'
