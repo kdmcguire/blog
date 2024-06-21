@@ -1,10 +1,10 @@
 name: CI
 
-on: [pull_request, merge_group]
+on: [pull_request]
 
 permissions:
   contents: read
-  pull-requests: read
+  pull-requests: write
 
 jobs:
   checks:
@@ -40,3 +40,51 @@ jobs:
         run: pnpm install
       - name: Astro check
         run: pnpm run check
+  assign-author:
+    name: Assign PR to author
+    if: ${{ github.actor != 'dependabot[bot]' }}
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Assign
+        id: assign
+        run: gh pr edit ${{ github.event.pull_request.html_url }} --add-assignee ${{ github.event.pull_request.user.login }}
+  assign-reviewer:
+    name: Assign PR for review
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Assign
+        id: assign
+        run: gh pr edit ${{ github.event.pull_request.html_url }} --add-reviewer kdmcguire
+  dependabot-automerge:
+    name: Automerge Dependabot patch/minor PRs
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@v2
+      - name: Automerge
+        if: ${{ (steps.metadata.outputs.update-type == 'version-update:semver-minor') || (steps.metadata.outputs.update-type == 'version-update:semver-patch') }}
+        run: gh pr merge "$PR_URL" --auto --squash
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+  dependabot-approve:
+    name: Approve passing Dependabot patch/minor PRs
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    needs: checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@v2
+      - name: Approve
+        if: ${{ (steps.metadata.outputs.update-type == 'version-update:semver-minor') || (steps.metadata.outputs.update-type == 'version-update:semver-patch') }}
+        run: gh pr review "$PR_URL" --approve
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.BRCAUTOBOT_TOKEN }}
