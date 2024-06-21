@@ -62,6 +62,8 @@ jobs:
   dependabot-automerge:
     name: Automerge Dependabot patch/minor PRs
     if: ${{ github.actor == 'dependabot[bot]' }}
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: Dependabot metadata
@@ -71,8 +73,8 @@ jobs:
         if: ${{ (steps.metadata.outputs.update-type == 'version-update:semver-minor') || (steps.metadata.outputs.update-type == 'version-update:semver-patch') }}
         run: gh pr merge "$PR_URL" --auto --squash
         env:
-          PR_URL: ${{github.event.pull_request.html_url}}
-          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   dependabot-approve:
     name: Approve passing Dependabot patch/minor PRs
     if: ${{ github.actor == 'dependabot[bot]' }}
@@ -87,4 +89,4 @@ jobs:
         run: gh pr review "$PR_URL" --approve
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
-          GH_TOKEN: ${{ secrets.BRCAUTOBOT_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
