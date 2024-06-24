@@ -15,3 +15,7 @@ for = "/*"
 
 [[plugins]]
     package = "netlify-plugin-append-redirects"
+
+[[edge_functions]]
+function = "block-bots"
+path = "/*"
