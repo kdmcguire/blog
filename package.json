@@ -18,7 +18,7 @@
 		"@astrojs/sitemap": "3.1.6",
 		"@astrojs/tailwind": "5.1.0",
 		"astro": "4.13.1",
-		"astro-expressive-code": "0.36.0",
+		"astro-expressive-code": "0.36.1",
 		"astro-icon": "1.1.1",
 		"markdown-it": "14.1.0",
 		"netlify-plugin-append-redirects": "0.0.2",
