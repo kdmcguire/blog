@@ -95,8 +95,8 @@ devDependencies:
     specifier: 3.6.3
     version: 3.6.3(@typescript-eslint/parser@7.18.0)(eslint-plugin-import@2.30.0)(eslint@8.57.0)
   eslint-plugin-astro:
-    specifier: 1.2.3
-    version: 1.2.3(eslint@8.57.0)(typescript@5.6.2)
+    specifier: 1.2.4
+    version: 1.2.4(eslint@8.57.0)(typescript@5.6.2)
   eslint-plugin-deprecation:
     specifier: 2.0.0
     version: 2.0.0(eslint@8.57.0)(typescript@5.6.2)
@@ -936,7 +936,7 @@ packages:
       '@antfu/install-pkg': 0.1.1
       '@antfu/utils': 0.7.10
       '@iconify/types': 2.0.0
-      debug: 4.3.6
+      debug: 4.3.7
       kolorist: 1.8.0
       local-pkg: 0.5.0
       mlly: 1.7.1
@@ -2932,6 +2932,7 @@ packages:
         optional: true
     dependencies:
       ms: 2.1.2
+    dev: true
 
   /debug@4.3.7:
     resolution: {integrity: sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==}
@@ -3445,8 +3446,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-astro@1.2.3(eslint@8.57.0)(typescript@5.6.2):
-    resolution: {integrity: sha512-asHT0VUs68oppVnTHfp/WgLqs0yCx9kG9AC/PKLmp+87imeh3nGHMdFm0qP46vHxTM0NLDEhvmjFdAVAqw+QPQ==}
+  /eslint-plugin-astro@1.2.4(eslint@8.57.0)(typescript@5.6.2):
+    resolution: {integrity: sha512-45uXKW6lxmYEa8Gkh5lCfwAnOyQD90AaMS2Bu9ans88f+pFkliqjGeexiKv73oiTcY3I0vlzTUk5GlqvYlkjyA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.57.0'
@@ -5771,6 +5772,7 @@ packages:
 
   /ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
+    dev: true
 
   /ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
@@ -7147,7 +7149,7 @@ packages:
     engines: {node: ^14.18.0 || >=16.0.0}
     dependencies:
       '@pkgr/core': 0.1.1
-      tslib: 2.6.3
+      tslib: 2.7.0
     dev: true
 
   /tailwindcss@3.4.11:
@@ -7284,8 +7286,6 @@ packages:
   /tslib@2.7.0:
     resolution: {integrity: sha512-gLXCKdN1/j47AiHiOkJN69hJmcbGTHI0ImLmbYLHykhgeN0jVGola9yVjFgzCUklsZQMW55o+dW7IXv3RCXDzA==}
     requiresBuild: true
-    dev: false
-    optional: true
 
   /tsutils@3.21.0(typescript@5.6.2):
     resolution: {integrity: sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==}
