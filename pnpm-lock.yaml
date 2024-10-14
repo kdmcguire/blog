@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@astrojs/mdx':
     specifier: 3.1.8
-    version: 3.1.8(astro@4.16.0)
+    version: 3.1.8(astro@4.16.3)
   '@astrojs/rss':
     specifier: 4.0.8
     version: 4.0.8
@@ -16,13 +16,13 @@ dependencies:
     version: 3.2.0
   '@astrojs/tailwind':
     specifier: 5.1.2
-    version: 5.1.2(astro@4.16.0)(tailwindcss@3.4.13)
+    version: 5.1.2(astro@4.16.3)(tailwindcss@3.4.13)
   astro:
-    specifier: 4.16.0
-    version: 4.16.0(typescript@5.6.3)
+    specifier: 4.16.3
+    version: 4.16.3(typescript@5.6.3)
   astro-expressive-code:
     specifier: 0.37.0
-    version: 0.37.0(astro@4.16.0)
+    version: 0.37.0(astro@4.16.3)
   astro-icon:
     specifier: 1.1.1
     version: 1.1.1
@@ -264,7 +264,7 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/mdx@3.1.8(astro@4.16.0):
+  /@astrojs/mdx@3.1.8(astro@4.16.3):
     resolution: {integrity: sha512-4o/+pvgoLFG0eG96cFs4t3NzZAIAOYu57fKAprWHXJrnq/qdBV0av6BYDjoESxvxNILUYoj8sdZVWtlPWVDLog==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
     peerDependencies:
@@ -273,7 +273,7 @@ packages:
       '@astrojs/markdown-remark': 5.3.0
       '@mdx-js/mdx': 3.0.1
       acorn: 8.12.1
-      astro: 4.16.0(typescript@5.6.3)
+      astro: 4.16.3(typescript@5.6.3)
       es-module-lexer: 1.5.4
       estree-util-visit: 2.0.0
       gray-matter: 4.0.3
@@ -311,13 +311,13 @@ packages:
       zod: 3.23.8
     dev: false
 
-  /@astrojs/tailwind@5.1.2(astro@4.16.0)(tailwindcss@3.4.13):
+  /@astrojs/tailwind@5.1.2(astro@4.16.3)(tailwindcss@3.4.13):
     resolution: {integrity: sha512-IvOF0W/dtHElcXvhrPR35nHmhyV3cfz1EzPitMGtU7sYy9Hci3BNK1To6FWmVuuNKPxza1IgCGetSynJZL7fOg==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0 || ^5.0.0-beta.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 4.16.0(typescript@5.6.3)
+      astro: 4.16.3(typescript@5.6.3)
       autoprefixer: 10.4.20(postcss@8.4.47)
       postcss: 8.4.47
       postcss-load-config: 4.0.2(postcss@8.4.47)
@@ -593,8 +593,8 @@ packages:
     resolution: {integrity: sha512-fXVXEyFA5Yv3M3n8sUGT7+fvecGrZP4k6FnWWMSZVQf69kAq0LLpaBQLGcPR30m3zMmKYhECP4k/ZkzvhEW5kw==}
     dev: true
 
-  /@emnapi/runtime@1.3.0:
-    resolution: {integrity: sha512-XMBySMuNZs3DM96xcJmLW4EfGnf+uGmFNjzpehMjuX5PLB5j87ar2Zc4e3PVeZ3I5g3tYtAqskB28manlF69Zw==}
+  /@emnapi/runtime@1.3.1:
+    resolution: {integrity: sha512-kEBmG8KyqtxJZv+ygbEim+KCGtIq1fC22Ms3S4ziXmYKm8uyoLX0MHONVKwp+9opg390VaKRNt4a7A9NwmpNhw==}
     requiresBuild: true
     dependencies:
       tslib: 2.7.0
@@ -1105,7 +1105,7 @@ packages:
     cpu: [wasm32]
     requiresBuild: true
     dependencies:
-      '@emnapi/runtime': 1.3.0
+      '@emnapi/runtime': 1.3.1
     dev: false
     optional: true
 
@@ -2336,12 +2336,12 @@ packages:
       - typescript
     dev: true
 
-  /astro-expressive-code@0.37.0(astro@4.16.0):
+  /astro-expressive-code@0.37.0(astro@4.16.3):
     resolution: {integrity: sha512-ElWiCQHVQh5+l8fvGRgctvxEw63G/KEZgRi60ApPsHK6NsexgPZENk3bnHzbCpigCgh/L9k/yJ+3zOyuhoPqhQ==}
     peerDependencies:
       astro: ^4.0.0-beta || ^5.0.0-beta || ^3.3.0
     dependencies:
-      astro: 4.16.0(typescript@5.6.3)
+      astro: 4.16.3(typescript@5.6.3)
       rehype-expressive-code: 0.37.0
     dev: false
 
@@ -2356,8 +2356,8 @@ packages:
       - supports-color
     dev: false
 
-  /astro@4.16.0(typescript@5.6.3):
-    resolution: {integrity: sha512-R5voBFy0yOg57uFnW24WV+RvqPerp9eOoDQoT0pQYqECuGuyV1PsZaSb9Nm0ec+KMLrfO9jvvESFw9LIN6XiUw==}
+  /astro@4.16.3(typescript@5.6.3):
+    resolution: {integrity: sha512-0IrnbCUprAyfeZ8Au/d/d0ssrYGMAZOZ1K3fX7GxI0OwUhkA9bSex0+ywiyVNiVZE5uRlTKRSkvLNKYQWdtHqw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
     dependencies:
@@ -2391,7 +2391,6 @@ packages:
       esbuild: 0.21.5
       estree-walker: 3.0.3
       fast-glob: 3.3.2
-      fastq: 1.17.1
       flattie: 1.1.1
       github-slugger: 2.0.0
       gray-matter: 4.0.3
@@ -2412,7 +2411,6 @@ packages:
       rehype: 13.0.2
       semver: 7.6.3
       shiki: 1.22.0
-      string-width: 7.2.0
       tinyexec: 0.3.0
       tsconfck: 3.1.4(typescript@5.6.3)
       unist-util-visit: 5.0.0
@@ -4090,8 +4088,8 @@ packages:
     engines: {node: 6.* || 8.* || >= 10.*}
     dev: true
 
-  /get-east-asian-width@1.2.0:
-    resolution: {integrity: sha512-2nk+7SIVb14QrgXFHcm84tD4bKQz0RxPuMT8Ag5KPOq7J5fEmAg0UbXdTOSHqNuHSU28k55qnceesxXRZGzKWA==}
+  /get-east-asian-width@1.3.0:
+    resolution: {integrity: sha512-vpeMIQKxczTD/0s2CdEWHcb0eeJe6TFjxb+J5xgX7hScxqrGuyjmv4c1D4A/gelKfyox0gJJwIHF+fLjeaM8kQ==}
     engines: {node: '>=18'}
     dev: false
 
@@ -7056,7 +7054,7 @@ packages:
     engines: {node: '>=18'}
     dependencies:
       emoji-regex: 10.4.0
-      get-east-asian-width: 1.2.0
+      get-east-asian-width: 1.3.0
       strip-ansi: 7.1.0
     dev: false
 
