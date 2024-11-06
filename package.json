@@ -31,7 +31,7 @@
 	"devDependencies": {
 		"@astrojs/check": "0.9.4",
 		"@iconify-json/mdi": "1.2.1",
-		"@pagefind/default-ui": "1.1.1",
+		"@pagefind/default-ui": "1.2.0",
 		"@resvg/resvg-js": "2.6.2",
 		"@tailwindcss/aspect-ratio": "0.4.2",
 		"@tailwindcss/typography": "0.5.15",
@@ -53,7 +53,7 @@
 		"eslint-plugin-regexp": "2.6.0",
 		"eslint-plugin-typescript-sort-keys": "3.3.0",
 		"mdast-util-to-string": "4.0.0",
-		"pagefind": "1.1.1",
+		"pagefind": "1.2.0",
 		"postcss": "8.4.47",
 		"postcss-html": "1.7.0",
 		"postcss-import": "16.1.0",
