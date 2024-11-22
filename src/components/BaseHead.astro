@@ -158,24 +158,6 @@ const socialImageURL = new URL(ogImage ? ogImage : "/default-social-card.jpg", A
 	type="application/rss+xml"
 />
 
-{/* Webmentions */}
-{
-	siteConfig.webmentions && (
-		<>
-			<link
-				href={siteConfig.webmentions.link}
-				rel="webmention"
-			/>
-			{siteConfig.webmentions.pingback && (
-				<link
-					href={siteConfig.webmentions.pingback}
-					rel="pingback"
-				/>
-			)}
-		</>
-	)
-}
-
 <meta
 	content={Astro.generator}
 	name="generator"

@@ -21,9 +21,6 @@ export const siteConfig: SiteConfig = {
 			year: "numeric",
 		},
 	},
-	webmentions: {
-		link: "https://webmention.io/kieranmcguire.uk/webmention",
-	},
 };
 
 // Used to generate links in both the Header & Footer.
