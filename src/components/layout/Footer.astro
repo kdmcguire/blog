@@ -6,7 +6,7 @@ const year = new Date().getFullYear();
 ---
 
 <footer
-	class="mt-16 gap-y-2 border-t-[0.5px] border-dashed border-gray-500 pb-4 pt-4 align-top text-xs text-gray-600 dark:text-gray-400">
+	class="mt-12 gap-y-2 border-t-[0.5px] border-dashed border-gray-500 pb-4 pt-4 align-top text-xs text-gray-600 dark:text-gray-400">
 	<div class="mt-0">
 		Copyright &copy; {year}{" "}
 		{siteConfig.author}
@@ -14,11 +14,15 @@ const year = new Date().getFullYear();
 	<div>
 		<p class="mt-2">
 			<Icon
-				class="mr-1 inline h-4 w-4"
-				name="mdi:cookie-off"
 				aria-hidden="true"
+				class="mr-1 inline h-4 w-4"
 				focusable="false"
-			/>No cookies between friends
+				name="mdi:email-fast"
+			/><a
+				href="mailto:gritty.art9139@fastmail.com"
+				class="underline"
+				>Send me an email!</a
+			>
 		</p>
 		<p class="mt-2">
 			<Icon
@@ -26,11 +30,23 @@ const year = new Date().getFullYear();
 				name="mdi:rss"
 				aria-hidden="true"
 				focusable="false"
-			/>Valid RSS (<a
+			/><a
+				href="/rss.xml"
+				class="underline"
+				>RSS</a
+			> (<a
 				href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fkieranmcguire.uk%2Frss.xml"
 				class="underline"
 				>validator.w3.org</a
 			>)
+		</p>
+		<p class="mt-2">
+			<Icon
+				class="mr-1 inline h-4 w-4"
+				name="mdi:cookie-off"
+				aria-hidden="true"
+				focusable="false"
+			/>No cookies between friends
 		</p>
 		<p class="mt-2">
 			<Icon

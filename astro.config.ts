@@ -40,9 +40,6 @@ export default defineConfig({
 		sitemap(),
 		mdx(),
 	],
-	image: {
-		domains: ["webmention.io"],
-	},
 	// https://docs.astro.build/en/guides/prefetch/
 	prefetch: true,
 	vite: {

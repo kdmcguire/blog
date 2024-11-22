@@ -39,7 +39,11 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
 </h1>
 <div class="flex flex-wrap items-center gap-x-3 gap-y-2">
 	<p class="font-semibold">
-		<FormattedDate class="dt-published" date={data.publishDate} dateTimeOptions={dateTimeOptions} />
+		<FormattedDate
+			class="dt-published"
+			date={data.publishDate}
+			dateTimeOptions={dateTimeOptions}
+		/>
 		/{" "}
 		{remarkPluginFrontmatter.minutesRead}
 	</p>
@@ -69,21 +73,23 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
 				stroke-linejoin="round"
 				stroke-width="1.5"
 				viewBox="0 0 24 24"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<path d="M0 0h24v24H0z" fill="none" stroke="none" />
+				xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M0 0h24v24H0z"
+					fill="none"
+					stroke="none"
+				/>
 				<path d="M7.859 6h-2.834a2.025 2.025 0 0 0 -2.025 2.025v2.834c0 .537 .213 1.052 .593 1.432l6.116 6.116a2.025 2.025 0 0 0 2.864 0l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-6.117 -6.116a2.025 2.025 0 0 0 -1.431 -.593z" />
 				<path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116" />
 				<path d="M6 9h-.01" />
 			</svg>
-			{data.tags.map((tag, i) => (
+			{data.tags.map((tag: unknown, i: number) => (
 				<>
 					<a
 						aria-label={`View more blogs with the tag ${tag}`}
 						class="cactus-link inline-block before:content-['#']"
 						data-pagefind-filter="tag"
-						href={`/tags/${tag}/`}
-					>
+						href={`/tags/${tag}/`}>
 						{tag}
 					</a>
 					{i < data.tags.length - 1 && ", "}
@@ -103,8 +109,7 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
 		stroke="currentColor"
 		fill="none"
 		stroke-linecap="round"
-		stroke-linejoin="round"
-	>
+		stroke-linejoin="round">
 		<path
 			fill="none"
 			stroke="currentColor"
@@ -114,10 +119,22 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
 			d="m9 15l6-6m-4-3l.463-.536a5 5 0 0 1 7.071 7.072L18 13m-5 5l-.397.534a5.068 5.068 0 0 1-7.127 0a4.972 4.972 0 0 1 0-7.071L6 11"
 		></path>
 	</svg>
-	<a class="u-url cactus-link" href={Astro.url}>permalink</a>
+	<a
+		class="u-url cactus-link"
+		href={Astro.url}
+		>permalink</a
+	>
 </div>
-<em><p class="p-summary mt-4">{data.description}</p></em>
+<em
+	><p class="p-summary mt-4 border-b-[0.5px] border-dashed border-gray-500 pb-4">
+		{data.description}
+	</p></em
+>
 <div class="hidden">
-	<a rel="author" class="p-author h-card" href="/">Kieran McGuire</a>
+	<a
+		rel="author"
+		class="p-author h-card"
+		href="/"
+		>Kieran McGuire</a
+	>
 </div>
-<hr class="mt-2" />
