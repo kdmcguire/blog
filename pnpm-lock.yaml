@@ -24,8 +24,8 @@ dependencies:
     specifier: 0.38.3
     version: 0.38.3(astro@4.16.14)
   astro-icon:
-    specifier: 1.1.2
-    version: 1.1.2
+    specifier: 1.1.4
+    version: 1.1.4
   markdown-it:
     specifier: 14.1.0
     version: 14.1.0
@@ -2362,8 +2362,8 @@ packages:
       rehype-expressive-code: 0.38.3
     dev: false
 
-  /astro-icon@1.1.2:
-    resolution: {integrity: sha512-2qAHBtZLYuFEIMP0Ck0edyLi5fQmJjwP2Qbv41f8L4KAJ2sra/dH7q5lCOn4q0DHVtS0w3tPG8UKQRits3UPcg==}
+  /astro-icon@1.1.4:
+    resolution: {integrity: sha512-sMLkQaevIQLv38WBzb/RDbsmxhg5+X+KcNmpTi9cE6MLurNWU1MPnlO87d9Vwg4HxTenKpDlYp81A3syXFW/gw==}
     dependencies:
       '@iconify/tools': 4.0.5
       '@iconify/types': 2.0.0
