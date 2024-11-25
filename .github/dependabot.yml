@@ -3,35 +3,17 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+      day: "monday"
+      time: "08:00"
     groups:
-      astro:
-        patterns:
-          - "astro"
-          - "@astrojs/*"
-      eslint:
-        patterns:
-          - "eslint"
-          - "@types/eslint"
-      markdown-it:
-        patterns:
-          - "markdown-it"
-          - "@types/markdown-it"
-      pagefind:
-        patterns:
-          - "pagefind"
-          - "@pagefind/default-ui"
-      sanitize-html:
-        patterns:
-          - "sanitize-html"
-          - "@types/sanitize-html"
-      typescript-eslint:
-        patterns:
-          - "@typescript-eslint/eslint-plugin"
-          - "@typescript-eslint/parser"
-    open-pull-requests-limit: 20
+      non-major:
+        update-types:
+          - "minor"
+          - "patch"
+    open-pull-requests-limit: 10
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
     open-pull-requests-limit: 10
