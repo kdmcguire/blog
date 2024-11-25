@@ -19,7 +19,7 @@
 		"@astrojs/tailwind": "5.1.2",
 		"astro": "4.16.14",
 		"astro-expressive-code": "0.38.3",
-		"astro-icon": "1.1.2",
+		"astro-icon": "1.1.4",
 		"markdown-it": "14.1.0",
 		"netlify-plugin-append-redirects": "0.0.2",
 		"rehype-external-links": "3.0.0",
