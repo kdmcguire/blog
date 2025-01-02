@@ -1,7 +1,7 @@
 ---
 title: "My favourite things of 2024"
 publishDate: "02 Jan 2025"
-description: "My favourite new-to-me things I enjoyed in 2024."
+description: "A handful of the new-to-me things that I enjoyed the most in 2024."
 tags: ["life"]
 ---
 
